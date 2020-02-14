@@ -3,8 +3,8 @@
     "platform": "Static webserver",
     "ui5libs": "Content delivery network (OpenUI5)",
     "newdir": false,
-    "projectname": "control_playground",
-    "namespace": "sapmarco",
+    "projectname": "customcontrol",
+    "namespace": "com.mrb",
     "viewtype": "XML",
     "viewname": "Main"
   }

@@ -3,5 +3,5 @@ sap.ui.define([
 ], function(Controller) {
   "use strict";
 
-  return Controller.extend("sapmarco.control_playground.controller.Main", {});
+  return Controller.extend("com.mrb.customcontrol.controller.Main", {});
 });

@@ -4,7 +4,7 @@ sap.ui.require([
 ], function (Opa5, AggregationLengthEquals) {
 	"use strict";
 
-	var sViewName = "sapmarco.control_playground.view.Main";
+	var sViewName = "com.mrb.customcontrol.view.Main";
 	var sAppId = "idAppControl";
 
 	Opa5.createPageObjects({

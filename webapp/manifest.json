@@ -1,7 +1,7 @@
 {
 	"_version": "1.12.0",
 	"sap.app": {
-		"id": "sapmarco.control_playground",
+		"id": "com.mrb.customcontrol",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
@@ -30,7 +30,7 @@
 
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "sapmarco.control_playground.view.Main",
+			"viewName": "com.mrb.customcontrol.view.Main",
 			"type": "XML",
 			"async": true,
 			"id": "app"
@@ -51,7 +51,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "sapmarco.control_playground.i18n.i18n"
+					"bundleName": "com.mrb.customcontrol.i18n.i18n"
 				}
 			}
 		},
@@ -64,7 +64,7 @@
 			"config": {
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
-				"viewPath": "sapmarco.control_playground.view",
+				"viewPath": "com.mrb.customcontrol.view",
 				"controlId": "app",
 				"controlAggregation": "pages",
 				"async": true

@@ -3,12 +3,12 @@ sap.ui.define([
 ], function(Opa5) {
 	"use strict";
 
-	return Opa5.extend("sapmarco.control_playground.test.integration.arrangements.Startup", {
+	return Opa5.extend("com.mrb.customcontrol.test.integration.arrangements.Startup", {
 
 		iStartMyApp: function () {
 			this.iStartMyUIComponent({
 				componentConfig: {
-					name: "sapmarco.control_playground",
+					name: "com.mrb.customcontrol",
 					async: true,
 					manifest: true
 				}

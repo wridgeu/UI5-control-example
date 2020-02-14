@@ -1,6 +1,6 @@
 sap.ui.define([
 	"sap/ui/test/opaQunit",
-	"sapmarco/control_playground/test/integration/pages/App"
+	"com/mrb/customcontrol/test/integration/pages/App"
 ], function (opaTest) {
 	"use strict";
 

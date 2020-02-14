@@ -1,11 +1,11 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/Device",
-	"sapmarco/control_playground/model/models"
+	"com/mrb/customcontrol/model/models"
 ], function(UIComponent, Device, models) {
 	"use strict";
 
-	return UIComponent.extend("sapmarco.control_playground.Component", {
+	return UIComponent.extend("com.mrb.customcontrol.Component", {
 
 		metadata: {
 			manifest: "json"

@@ -1,7 +1,7 @@
 sap.ui.define([
 	"sap/ui/test/Opa5",
-	"sapmarco/control_playground/test/integration/arrangements/Startup",
-	"sapmarco/control_playground/test/integration/BasicJourney"
+	"com/mrb/customcontrol/test/integration/arrangements/Startup",
+	"com/mrb/customcontrol/test/integration/BasicJourney"
 ], function(Opa5, Startup) {
 	"use strict";
 
