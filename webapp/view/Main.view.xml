@@ -1,18 +1,32 @@
- <mvc:View controllerName="com.mrb.customcontrol.controller.Main"
+ 
+<mvc:View controllerName="com.mrb.customcontrol.controller.Main"
 	displayBlock="true"
-	xmlns="sap.m"
-	xmlns:l="sap.ui.layout"
-	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:customInput="com.mrb.customcontrol.controls">
-	<App id="idAppControl">
-		<pages>
-			<Page title="{i18n>title}">
-				<content>
-					<FlexBox height="100%" alignItems="Center" justifyContent="Center">
-						<customInput:ExtendedInput showValueHelp="true" value="test" onSelect="onSelectEventFired" press="onAggregationPressed"/>
-					</FlexBox>
-				</content>
-			</Page>
-		</pages>
-	</App>
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:customControls="com.mrb.customcontrol.controls">
+    <App id="idAppControl">
+        <pages>
+            <Page title="{i18n>title}">
+                <content>
+                    <l:BlockLayout>
+                        <l:BlockLayoutRow>
+                            <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet5" backgroundColorShade="ShadeC">
+                                <FlexBox alignItems="Center" alignContent="Center" justifyContent="Center" backgroundDesign="Transparent" direction="Column">
+                                    <customControls:ExtendedInput showValueHelp="true" value="test" onSelect="onSelectEventFired" press="onAggregationPressed"/>
+                                </FlexBox>
+                            </l:BlockLayoutCell>
+                        </l:BlockLayoutRow>
+                        <l:BlockLayoutRow>
+                            <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet5" backgroundColorShade="ShadeC">
+                                <FlexBox alignItems="Center" alignContent="Center" justifyContent="Center" backgroundDesign="Transparent" direction="Column">
+                                    <customControls:CustomControl value="This Text sets the text in the rendered label aggregation."/>
+                                </FlexBox>
+                            </l:BlockLayoutCell>
+                        </l:BlockLayoutRow>
+                    </l:BlockLayout>
+                </content>
+            </Page>
+        </pages>
+    </App>
 </mvc:View> 
