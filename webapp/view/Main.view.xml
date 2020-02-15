@@ -9,7 +9,7 @@
 			<Page title="{i18n>title}">
 				<content>
 					<FlexBox height="100%" alignItems="Center" justifyContent="Center">
-						<customInput:ExtendedInput showValueHelp="true" value="test" onSelect="onSelectEventFired"/>
+						<customInput:ExtendedInput showValueHelp="true" value="test" onSelect="onSelectEventFired" press="onAggregationPressed"/>
 					</FlexBox>
 				</content>
 			</Page>

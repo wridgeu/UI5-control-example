@@ -8,7 +8,9 @@ sap.ui.define([
 
       onSelectEventFired: function(oEvt){
         console.log(oEvt.getParameters());
+      },
+      onAggregationPressed: function(oEvt){
+        console.log(oEvt);
       }
-
   });
 });

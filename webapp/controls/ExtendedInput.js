@@ -1,7 +1,8 @@
 sap.ui.define([
 	"sap/m/Input",
+	"sap/m/Button",
 	"sap/m/MessageToast"
-], function(Input, MessageToast) {
+], function(Input, Button, MessageToast) {
 	"use strict";
 
 	return Input.extend("com.mrb.customcontrol.controls.ExtendedInput", {
@@ -13,22 +14,37 @@ sap.ui.define([
 					defaultValue: "someTestProperty"
 				}
 			},
+			aggregations: {
+				button: {
+					type: "sap.m.Button",
+					multiple: false
+				}
+			},
 			events: {
 				onSelect: {
 					allowPreventDefault: true,
 					parameters: {
 						"parameterOne" : {type: "string"}
 					}
-				}
+				},
+				press: {}
 			},
 		},
 
 		init: function() {
+			var that = this;
 			Input.prototype.init.call(this);
 			//tell attach us to the event and call our method
 			this.attachValueHelpRequest(this.onValueHelpRequest);
 			//no need for onChange to be attached here, idk why~
 			this.attachChange(this.onChange);
+			this.oButton = new Button({
+				text: "This is an aggregation",
+				press: function(oEvt){
+					that.firePress(oEvt)
+				}
+			});
+			this.setAggregation("button", this.oButton)
 		},
 
 		onValueHelpRequest: function(){
@@ -42,6 +58,9 @@ sap.ui.define([
 			MessageToast.show("onChange has been fired");
 		},
 		//use standard renderer
-		renderer: "sap.m.InputRenderer"
+		renderer: function(oRm, oCustomControl){
+			sap.m.InputRenderer.render(oRm, oCustomControl);
+			oRm.renderControl(oCustomControl.getAggregation("button"))
+		} 
 	});
 });
