@@ -2,14 +2,15 @@
 	displayBlock="true"
 	xmlns="sap.m"
 	xmlns:l="sap.ui.layout"
-	xmlns:mvc="sap.ui.core.mvc">
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:customInput="com.mrb.customcontrol.controls">
 	<App id="idAppControl">
 		<pages>
 			<Page title="{i18n>title}">
 				<content>
 					<FlexBox height="100%" alignItems="Center" justifyContent="Center">
-						<Input/>
-					</FlexBox>			
+						<customInput:ExtendedInput showValueHelp="true" value="test" onSelect="onSelectEventFired"/>
+					</FlexBox>
 				</content>
 			</Page>
 		</pages>
