@@ -30,7 +30,11 @@
                 "ui5-middleware-livereload": "^0.1.5"
         },
         "ui5": {
-                "dependencies": [
+                "dependencies": [            
+                        "@openui5/sap.m",
+                        "@openui5/sap.ui.core",
+                        "@openui5/sap.ui.layout",
+                        "@openui5/themelib_sap_belize",
                         "ui5-middleware-livereload"
                 ]
         }
