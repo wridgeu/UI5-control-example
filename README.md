@@ -27,4 +27,4 @@ Hint: it already uses the livereload-middleware for the UI5 tooling, so changes 
 
 ## Credits
 
-You can find credits to code or information within the [Wiki](https://github.com/SAPMarco/SAPMarco.github.io/wiki).
+You can find credits to code or documentation within the [Wiki](https://github.com/SAPMarco/SAPMarco.github.io/wiki).
