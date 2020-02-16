@@ -1,6 +1,6 @@
 sap.ui.define([
   "sap/ui/core/mvc/Controller",
-  "sap/m/MessageToast"
+  "sap/m/MessageToast",
 ], function(Controller, MessageToast) {
   "use strict";
 
@@ -11,6 +11,10 @@ sap.ui.define([
       },
       onAggregationPressed: function(oEvt){
         console.log(oEvt);
+      },
+      onPress: function(oEvt){
+        console.log("Event from composite control got delegated.")
+        console.log(oEvt)
       }
   });
 });

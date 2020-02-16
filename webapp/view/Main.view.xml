@@ -4,7 +4,8 @@
     xmlns="sap.m"
     xmlns:l="sap.ui.layout"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns:customControls="com.mrb.customcontrol.controls">
+    xmlns:customControls="com.mrb.customcontrol.controls"
+    xmlns:xmlComposite="com.mrb.customcontrol.controls.compositeControl">
     <App id="idAppControl">
         <pages>
             <Page title="{i18n>title}">
@@ -12,15 +13,31 @@
                     <l:BlockLayout>
                         <l:BlockLayoutRow>
                             <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet5" backgroundColorShade="ShadeC">
+                                <FlexBox alignItems="Begin" backgroundDesign="Transparent" direction="Column">
+                                     <Title class="title" titleStyle="H1" text="Extended Control:"/>
+                                </FlexBox>
                                 <FlexBox alignItems="Center" alignContent="Center" justifyContent="Center" backgroundDesign="Transparent" direction="Column">
                                     <customControls:ExtendedInput showValueHelp="true" value="test" onSelect="onSelectEventFired" press="onAggregationPressed"/>
                                 </FlexBox>
                             </l:BlockLayoutCell>
                         </l:BlockLayoutRow>
                         <l:BlockLayoutRow>
-                            <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet5" backgroundColorShade="ShadeC">
+                            <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet7" backgroundColorShade="ShadeC">
+                                <FlexBox alignItems="Begin" backgroundDesign="Transparent" direction="Column">
+                                     <Title class="title" titleStyle="H1" text="Custom Control:"/>
+                                </FlexBox>
                                 <FlexBox alignItems="Center" alignContent="Center" justifyContent="Center" backgroundDesign="Transparent" direction="Column">
                                     <customControls:CustomControl value="This Text sets the text in the rendered label aggregation."/>
+                                </FlexBox>
+                            </l:BlockLayoutCell>
+                        </l:BlockLayoutRow>
+                        <l:BlockLayoutRow>
+                            <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet5" backgroundColorShade="ShadeC">
+                                <FlexBox alignItems="Begin" backgroundDesign="Transparent" direction="Column">
+                                     <Title class="title" titleStyle="H1" text="XMLComposite Control:"/>
+                                </FlexBox>
+                                <FlexBox alignItems="Center" alignContent="Center" justifyContent="Center" backgroundDesign="Transparent" direction="Column">
+                                    <xmlComposite:compositeControl label="LabelText" value="someValue" compositeControlEvent="onPress" />
                                 </FlexBox>
                             </l:BlockLayoutCell>
                         </l:BlockLayoutRow>
