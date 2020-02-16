@@ -24,15 +24,13 @@ sap.ui.define([
                 text: this.getValue()
             }));
 		},
-        setValue: function (iValue) {
-			this.setProperty("value", iValue, true);
-			this.getAggregation("_label").setText(iValue);
+        setValue: function (sValue) {
+			this.setProperty("value", sValue, true);
+			this.getAggregation("_label").setText(sValue);
 		},
         renderer: function(oRM, oCustomControl){
-
-            // oRM.openStart("div", oCustomControl);
-            //the optimized way:
-            oRM.openStart("div", oCustomControl.getId()+"-suffix")
+            // The new way:
+            oRM.openStart("div", oCustomControl)
             oRM.class("someCSSClassHere");
             oRM.openEnd();
             oRM.renderControl(oCustomControl.getAggregation("_label", oCustomControl)); 
