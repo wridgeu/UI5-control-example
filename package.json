@@ -1,6 +1,10 @@
 {
         "name": "customcontrol",
         "version": "0.0.1",
+        "repository": {
+                "type": "git",
+                "directory": "https://github.com/SAPMarco/UI5-control-example"
+        },
         "engines": {
                 "node": "12.x.x"
         },
