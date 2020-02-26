@@ -15,8 +15,6 @@ Hint: it already uses the livereload-middleware for the UI5 tooling, so changes 
 
 ## To Do
 
-- [ ] Add an example control library
-- [ ] Add multiple component example
 - [ ] Adjust tests to present results in UI without console.log
 
 ## Q/A
