@@ -13,15 +13,25 @@ You can just clone this repository, run npm install and use the [UI5 tooling](ht
 
 Hint: it already uses the livereload-middleware for the UI5 tooling, so changes while serving trigger and immediate update in the browser.
 
+```powershell
+git clone <repository-url>
+
+cd <repository>
+
+npm install
+
+npm start
+```
+
 ## To Do
 
 - [ ] Adjust tests to present results in UI without console.log
 
 ## Q/A
 
-- I'm open for any feedback, prs or written change proposals.
+- I'm open for any feedback, pull requests or written change proposals.
 - Yes, I deleted everything related to testing on purpose.
-- It's just meant to help with my personal learning and as playground for some of the Wiki content.
+- It's just meant to help with my personal learning and as playground for some of the [Wiki](https://github.com/SAPMarco/SAPMarco.github.io/wiki) content.
 
 ## Credits
 
