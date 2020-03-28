@@ -13,7 +13,7 @@
                     <l:BlockLayout>
                         <l:BlockLayoutRow>
                             <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet5" backgroundColorShade="ShadeC">
-                                <FlexBox alignItems="Begin" backgroundDesign="Transparent" direction="Column">
+                                <FlexBox alignItems="Start" backgroundDesign="Transparent" direction="Column">
                                      <Title class="title" titleStyle="H1" text="Extended Control:"/>
                                 </FlexBox>
                                 <FlexBox alignItems="Center" alignContent="Center" justifyContent="Center" backgroundDesign="Transparent" direction="Column">
@@ -23,7 +23,7 @@
                         </l:BlockLayoutRow>
                         <l:BlockLayoutRow>
                             <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet7" backgroundColorShade="ShadeC">
-                                <FlexBox alignItems="Begin" backgroundDesign="Transparent" direction="Column">
+                                <FlexBox alignItems="Start" backgroundDesign="Transparent" direction="Column">
                                      <Title class="title" titleStyle="H1" text="Custom Control:"/>
                                 </FlexBox>
                                 <FlexBox alignItems="Center" alignContent="Center" justifyContent="Center" backgroundDesign="Transparent" direction="Column">
@@ -33,7 +33,7 @@
                         </l:BlockLayoutRow>
                         <l:BlockLayoutRow>
                             <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet5" backgroundColorShade="ShadeC">
-                                <FlexBox alignItems="Begin" backgroundDesign="Transparent" direction="Column">
+                                <FlexBox alignItems="Start" backgroundDesign="Transparent" direction="Column">
                                      <Title class="title" titleStyle="H1" text="XMLComposite Control:"/>
                                 </FlexBox>
                                 <FlexBox alignItems="Center" alignContent="Center" justifyContent="Center" backgroundDesign="Transparent" direction="Column">
