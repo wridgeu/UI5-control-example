@@ -11,7 +11,7 @@ This is some playground repository for the corresponding [Wiki](https://github.c
 
 You can just clone this repository, run npm install and use the [UI5 tooling](https://github.com/SAP/ui5-tooling) to locally serve the application in order to debug/learn from it. 
 
-Hint: it already uses the livereload-middleware for the UI5 tooling, so changes while serving trigger and immediate update in the browser.
+Hint: it already uses the livereload-middleware for the [UI5 tooling](https://github.com/SAP/ui5-tooling), so changes while serving trigger and immediate update in the browser.
 
 ```sh
 git clone <repository-url>
