@@ -13,7 +13,7 @@ You can just clone this repository, run npm install and use the [UI5 tooling](ht
 
 Hint: it already uses the livereload-middleware for the UI5 tooling, so changes while serving trigger and immediate update in the browser.
 
-```powershell
+```sh
 git clone <repository-url>
 
 cd <repository>
