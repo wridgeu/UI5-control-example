@@ -55,7 +55,7 @@ sap.ui.define([
 		},
 		//onChange is being inherited from sap.m.InputBase
 		onChange: function() {
-			MessageToast.show("onChange has been fired");
+			MessageToast.show("onChange has been fired in extended control");
 		},
 		//use standard renderer
 		renderer: function(oRm, oCustomControl){
