@@ -10,7 +10,6 @@
 		"title": "{{appTitle}}",
 		"description": "{{appDescription}}"
 	},
-
 	"sap.ui": {
 		"technology": "UI5",
 		"icons": {
@@ -25,9 +24,11 @@
 			"desktop": true,
 			"tablet": true,
 			"phone": true
-		}
+		},
+		"supportedThemes": [
+			"sap_belize"
+		]
 	},
-
 	"sap.ui5": {
 		"rootView": {
 			"viewName": "com.mrb.customcontrol.view.Main",
@@ -56,9 +57,11 @@
 			}
 		},
 		"resources": {
-			"css": [{
-				"uri": "css/style.css"
-			}]
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
 		},
 		"routing": {
 			"config": {
@@ -69,11 +72,15 @@
 				"controlAggregation": "pages",
 				"async": true
 			},
-			"routes": [{
-				"name": "RouteMain",
-				"pattern": "RouteMain",
-				"target": ["TargetMain"]
-			}],
+			"routes": [
+				{
+					"name": "RouteMain",
+					"pattern": "RouteMain",
+					"target": [
+						"TargetMain"
+					]
+				}
+			],
 			"targets": {
 				"TargetMain": {
 					"viewType": "XML",
