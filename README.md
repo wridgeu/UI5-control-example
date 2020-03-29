@@ -36,3 +36,4 @@ npm start
 ## Credits
 
 You can find credits to code or documentation within the [Wiki](https://github.com/SAPMarco/SAPMarco.github.io/wiki).
+Social-Image for the repo from [this blog](https://blogs.sap.com/2018/11/12/sapui5-controller-lifecycle-methods-explained/).
