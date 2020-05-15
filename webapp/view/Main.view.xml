@@ -12,7 +12,7 @@
                 <content>
                     <l:BlockLayout>
                         <l:BlockLayoutRow>
-                            <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet5" backgroundColorShade="ShadeC">
+                            <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet5" backgroundColorShade="ShadeE">
                                 <FlexBox alignItems="Start" backgroundDesign="Transparent" direction="Column">
                                      <Title class="title" titleStyle="H1" text="Extended Control:"/>
                                 </FlexBox>
@@ -22,7 +22,7 @@
                             </l:BlockLayoutCell>
                         </l:BlockLayoutRow>
                         <l:BlockLayoutRow>
-                            <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet7" backgroundColorShade="ShadeC">
+                            <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet7" backgroundColorShade="ShadeF">
                                 <FlexBox alignItems="Start" backgroundDesign="Transparent" direction="Column">
                                      <Title class="title" titleStyle="H1" text="Custom Control:"/>
                                 </FlexBox>
@@ -32,7 +32,7 @@
                             </l:BlockLayoutCell>
                         </l:BlockLayoutRow>
                         <l:BlockLayoutRow>
-                            <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet5" backgroundColorShade="ShadeC">
+                            <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet5" backgroundColorShade="ShadeF">
                                 <FlexBox alignItems="Start" backgroundDesign="Transparent" direction="Column">
                                      <Title class="title" titleStyle="H1" text="XMLComposite Control:"/>
                                 </FlexBox>
