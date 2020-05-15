@@ -28,22 +28,28 @@ sap.ui.define([
 			this.setProperty("value", sValue, true);
 			this.getAggregation("_label").setText(sValue);
 		},
-        renderer: function(oRM, oCustomControl){
-            // The new way:
-            oRM.openStart("div", oCustomControl)
-            oRM.class("someCSSClassHere");
-            oRM.openEnd();
-            oRM.renderControl(oCustomControl.getAggregation("_label", oCustomControl)); 
-            oRM.close("div")
-
-            // The old way:
-            // oRM.write("<div");
-			// oRM.writeControlData(oCustomControl);
-			// oRM.addClass("someCSSClass");
-			// oRM.writeClasses();
-			// oRM.write(">");
-            // oRM.renderControl(oCustomControl.getAggregation("_label", oCustomControl));
-            // oRM.write("</div>");
-		} 
+        renderer: { 
+            apiVersion: 2,
+            render: function(oRM, oCustomControl) {
+                // The new way:
+                oRM.openStart("div", oCustomControl)
+                oRM.class("someCSSClassHere");
+                oRM.openEnd();
+                oRM.renderControl(oCustomControl.getAggregation("_label", oCustomControl)); 
+                oRM.close("div")
+            }
+        }
+        // renderer: {
+        //     render: function(oRM, oCustomControl){
+        //     The old way:
+        //     oRM.write("<div");
+		// 	   oRM.writeControlData(oCustomControl);
+		// 	   oRM.addClass("someCSSClass");
+		// 	   oRM.writeClasses();
+		// 	   oRM.write(">");
+        //     oRM.renderControl(oCustomControl.getAggregation("_label", oCustomControl));
+        //     oRM.write("</div>");
+        //     }
+        // }
 	});
 });
