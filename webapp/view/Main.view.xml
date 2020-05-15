@@ -8,7 +8,7 @@
     xmlns:xmlComposite="com.mrb.customcontrol.controls.compositeControl">
     <App id="idAppControl">
         <pages>
-            <Page title="{i18n>title}">
+            <Page titleAlignment="Center" title="{i18n>title}">
                 <content>
                     <l:BlockLayout>
                         <l:BlockLayoutRow>
