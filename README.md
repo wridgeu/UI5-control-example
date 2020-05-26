@@ -5,13 +5,13 @@ This is some playground repository for the corresponding [Wiki](https://github.c
 * Extending standard controls
 * Creating custom controls
 * Creating XMLComposite controls
-* Creating a library to bundle controls
+* Creating and Consuming UI5 libraries (ToDo)
 
 # Getting Started
 
 You can just clone this repository, run npm install and use the [UI5 tooling](https://github.com/SAP/ui5-tooling) to locally serve the application in order to debug/learn from it. 
 
-Hint: it already uses the livereload-middleware for the [UI5 tooling](https://github.com/SAP/ui5-tooling), so changes while serving trigger an immediate update in the browser.
+* __Note:__ it already uses the livereload-middleware for the [UI5 tooling](https://github.com/SAP/ui5-tooling), so changes while serving trigger an immediate update in the browser.
 
 1. Clone the repository
     ```sh
