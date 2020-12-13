@@ -27,7 +27,7 @@
                                      <Title class="title" titleStyle="H1" text="Custom Control:"/>
                                 </FlexBox>
                                 <FlexBox alignItems="Center" alignContent="Center" justifyContent="Center" backgroundDesign="Transparent" direction="Column">
-                                    <customControls:CustomControl value="This Text sets the text in the rendered label aggregation."/>
+                                    <customControls:CustomControl value="This text is set in the currently rendered label aggregation of the custom control."/>
                                 </FlexBox>
                             </l:BlockLayoutCell>
                         </l:BlockLayoutRow>
