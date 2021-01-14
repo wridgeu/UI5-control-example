@@ -1,6 +1,6 @@
 # UI5 Extensibility Playground
 
-This is some playground repository for the corresponding [Wiki](https://github.com/SAPMarco/SAPMarco.github.io/wiki), in order to play around with some UI5 extensibility features like:
+This is some playground repository for the corresponding [Wiki](https://github.com/wridgeu/wridgeu.github.io/wiki), in order to play around with some UI5 extensibility features like:
 
 * Extending standard controls
 * Creating custom controls
@@ -34,9 +34,9 @@ You can just clone this repository, run npm install and use the [UI5 tooling](ht
 
 - I'm open for any feedback, pull requests or written change proposals.
 - Yes, I deleted everything related to testing on purpose.
-- It's just meant to help with my personal learning and as playground for some of the [Wiki](https://github.com/SAPMarco/SAPMarco.github.io/wiki) content.
+- It's just meant to help with my personal learning and as playground for some of the [Wiki](https://github.com/wridgeu/wridgeu.github.io/wiki) content.
 
 # Credits
 
-You can find credits to code or documentation within the [Wiki](https://github.com/SAPMarco/SAPMarco.github.io/wiki).
+You can find credits to code or documentation within the [Wiki](https://github.com/wridgeu/wridgeu.github.io/wiki).
 Social-Image for the repo from [this blog](https://blogs.sap.com/2018/11/12/sapui5-controller-lifecycle-methods-explained/).
