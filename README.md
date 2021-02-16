@@ -15,19 +15,19 @@ You can just clone this repository, run npm install and use the [UI5 tooling](ht
 
 1. Clone the repository
     ```sh
-    git clone <repository-url>
+    $> git clone <repository-url>
     ```
 1. Navigate into the cloned repository 
     ```sh
-    cd <repository>
+    $> cd <repository>
     ```
 1. Install all dependencies
     ```sh
-    npm install
+    $> npm install
     ```
 1. Start the application
     ```sh
-    npm start
+    $> npm start
     ```
 
 # Q/A
@@ -40,3 +40,4 @@ You can just clone this repository, run npm install and use the [UI5 tooling](ht
 
 You can find credits to code or documentation within the [Wiki](https://github.com/wridgeu/wridgeu.github.io/wiki).
 Social-Image for the repo from [this blog](https://blogs.sap.com/2018/11/12/sapui5-controller-lifecycle-methods-explained/).
+Check out control Libraries and Modules on the [UI5 Community Org](https://github.com/ui5-community).
