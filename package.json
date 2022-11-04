@@ -1,6 +1,6 @@
 {
   "name": "customcontrol",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "repository": {
     "type": "git",
     "directory": "https://github.com/wridgeu/UI5-control-example"
@@ -12,15 +12,15 @@
     "start": "ui5 serve -o index.html",
     "serve": "ui5 serve",
     "lint": "eslint webapp",
-    "build:ui": "ui5 build --clean-dest --dest approuter/webapp "
+    "build": "ui5 build --clean-dest --dest ./dist"
   },
   "dependencies": {
     "shx": "^0.3.4"
   },
   "devDependencies": {
-    "@openui5/ts-types": "^1.101.0",
-    "@ui5/cli": "^2.14.8",
-    "eslint": "^8.14.0",
+    "@openui5/ts-types": "^1.108.0",
+    "@ui5/cli": "^2.14.14",
+    "eslint": "^8.26.0",
     "ui5-middleware-livereload": "^0.7.0"
   },
   "ui5": {
