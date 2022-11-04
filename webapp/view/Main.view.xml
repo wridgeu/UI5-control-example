@@ -14,7 +14,7 @@
                         <l:BlockLayoutRow>
                             <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet5" backgroundColorShade="ShadeE">
                                 <FlexBox alignItems="Start" backgroundDesign="Transparent" direction="Column">
-                                     <Title class="title" titleStyle="H1" text="Extended Control:"/>
+                                     <Title class="title" titleStyle="H1" text="Extended Control"/>
                                 </FlexBox>
                                 <FlexBox alignItems="Center" alignContent="Center" justifyContent="Center" backgroundDesign="Transparent" direction="Column">
                                     <customControls:ExtendedInput showValueHelp="true" value="test" onSelect="onSelectEventFired" press="onAggregationPressed"/>
@@ -24,7 +24,7 @@
                         <l:BlockLayoutRow>
                             <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet7" backgroundColorShade="ShadeF">
                                 <FlexBox alignItems="Start" backgroundDesign="Transparent" direction="Column">
-                                     <Title class="title" titleStyle="H1" text="Custom Control:"/>
+                                     <Title class="title" titleStyle="H1" text="Basic Custom Control"/>
                                 </FlexBox>
                                 <FlexBox alignItems="Center" alignContent="Center" justifyContent="Center" backgroundDesign="Transparent" direction="Column">
                                     <customControls:CustomControl value="This text is set in the currently rendered label aggregation of the custom control."/>
@@ -34,10 +34,20 @@
                         <l:BlockLayoutRow>
                             <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet5" backgroundColorShade="ShadeF">
                                 <FlexBox alignItems="Start" backgroundDesign="Transparent" direction="Column">
-                                     <Title class="title" titleStyle="H1" text="XMLComposite Control:"/>
+                                     <Title class="title" titleStyle="H1" text="XMLComposite Control"/>
+                                     <Title class="title" titleStyle="H4" text="(deprecated → bad performance)"/>
                                 </FlexBox>
                                 <FlexBox alignItems="Center" alignContent="Center" justifyContent="Center" backgroundDesign="Transparent" direction="Column">
                                     <xmlComposite:compositeControl label="LabelText" value="someValue" compositeControlEvent="onPress" />
+                                </FlexBox>
+                            </l:BlockLayoutCell>
+                        </l:BlockLayoutRow>
+                        <l:BlockLayoutRow>
+                            <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet5" backgroundColorShade="ShadeF">
+                                <FlexBox alignItems="Start" backgroundDesign="Transparent" direction="Column">
+                                     <Title class="title" titleStyle="H1" text="Rerender CC on model changes (reactive)"/>
+                                </FlexBox>
+                                <FlexBox id="container" alignItems="Center" alignContent="Center" justifyContent="Center" backgroundDesign="Transparent" direction="Column">
                                 </FlexBox>
                             </l:BlockLayoutCell>
                         </l:BlockLayoutRow>
