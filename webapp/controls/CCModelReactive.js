@@ -29,7 +29,6 @@ sap.ui.define([
 		renderer: {
 			apiVersion: 2,
 			render(rm, control) {
-				// The new way:
 				rm.openStart("div", control).openEnd();
 				rm.renderControl(control.getAggregation("text", control));
 				rm.close("div")
