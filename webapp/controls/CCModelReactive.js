@@ -19,7 +19,9 @@ sap.ui.define([
 		},
 
 		init: function () {
-			this._textControl = new Text("newText")
+			this._textControl = new Text()
+			// alternatively you can create & bind an internal default model here
+			// and manage it from the outside → `customControl.getModel().setData({<somedata>})`
 		},
 
 		onBeforeRendering: function () {
@@ -29,7 +31,6 @@ sap.ui.define([
 		renderer: {
 			apiVersion: 2,
 			render(rm, control) {
-				// The new way:
 				rm.openStart("div", control).openEnd();
 				rm.renderControl(control.getAggregation("text", control));
 				rm.close("div")
