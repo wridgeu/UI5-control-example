@@ -3,18 +3,23 @@ sap.ui.define([
   "sap/m/MessageToast",
   "com/mrb/customcontrol/controls/CCModelReactive",
   "sap/ui/model/json/JSONModel",
-  "sap/m/Button"
+  "sap/m/Button",
+  "com/mrb/customcontrol/controls/BinVis/BinVis",
+  "com/mrb/customcontrol/controls/BinVis/Segment"
 ], function (Controller,
   MessageToast,
   CCModelReactive,
   JSONModel,
-  Button) {
+  Button,
+  BinVis,
+  Segment) {
   "use strict";
 
   return Controller.extend("com.mrb.customcontrol.controller.Main", {
 
     onInit: function () {
       this._setupCustomControlWithReactiveModelUsage()
+      this._setupCustomControlBoxVis()
     },
 
     onSelectEventFired: function (oEvt) {
@@ -73,6 +78,104 @@ sap.ui.define([
           }, true)
         }
       }))
+    },
+    _setupCustomControlBoxVis() {
+      // variant 1
+      // const binFrame = new BinVis({ width: "650px", height: "250px" })
+      // variant 2
+      // const binFrame = this.byId("customBinVis")
+      // variant 3
+      // <insert some third entity here to interact (manager)>
+
+      // binFrame.insertSegment(new Segment({
+      //   huident: "1902076858547",
+      //   hutype: "BINU",
+      //   logpos: 1,
+      //   product: "8064967",
+      //   batch: "DENN000001",
+      //   stockQuantity: "40",
+      //   stockUom: "PC",
+      //   sled: "01.02.2023",
+      //   state: "A",
+      // }),1)
+      // binFrame.insertSegment(new Segment({
+      //   huident: "1902076858547",
+      //   hutype: "BINU",
+      //   logpos: 1,
+      //   product: "8064967",
+      //   batch: "DENN000002",
+      //   stockQuantity: "40",
+      //   stockUom: "PC",
+      //   sled: "01.02.2023",
+      //   state: "A",
+      // }),2)
+      // binFrame.insertSegment(new Segment({
+      //   huident: "1902076858547",
+      //   hutype: "BINU",
+      //   logpos: 1,
+      //   product: "8064967",
+      //   batch: "DENN000003",
+      //   stockQuantity: "40",
+      //   stockUom: "PC",
+      //   sled: "01.02.2023",
+      //   state: "A",
+      // }),3)
+      // binFrame.insertSegment(new Segment({
+      //   huident: "1902076858547",
+      //   hutype: "BINU",
+      //   logpos: 1,
+      //   product: "8064967",
+      //   batch: "DENN000000",
+      //   stockQuantity: "40",
+      //   stockUom: "PC",
+      //   sled: "01.02.2023",
+      //   state: "A",
+      // }),0)
+
+      // this.byId("container2").addItem(binFrame)
+
+      // -------------------
+      // variant 4
+      this.byId("customBinVis").setModel(new JSONModel(this._getDemoModel()), "dmo")
+    },
+
+    _getDemoModel() {
+      return {
+        items: [
+          {
+            huident: "1902076858547",
+            hutype: "BINU",
+            logpos: "1",
+            product: "8064967",
+            batch: "DENN000000",
+            state: "A",
+          },
+          {
+            huident: "1902076858547",
+            huType: "BINU",
+            logpos: "1",
+            product: "8064967",
+            batch: "DENN000000",
+            state: "A",
+          },
+          {
+            huident: "1902076858547",
+            huType: "BINU",
+            logpos: "1",
+            product: "8064967",
+            batch: "DENN000000",
+            state: "A",
+          },
+          {
+            huident: "1902076858547",
+            huType: "BINU",
+            logpos: "1",
+            product: "8064967",
+            batch: "DENN000000",
+            state: "A",
+          }
+        ]
+      }
     }
   });
 });
