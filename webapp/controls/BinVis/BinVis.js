@@ -10,6 +10,9 @@ sap.ui.define(
 		return Control.extend("com.mrb.customcontrol.controls.BinVis.BinVis", {
 			metadata: {
 				properties: {
+					orientation: {
+						type: "string",
+					},
 					width: {
 						type: "sap.ui.core.CSSSize",
 					},
@@ -41,9 +44,15 @@ sap.ui.define(
 						.style("display", "flex")
 						.style("flex-wrap", "wrap")
 						.openEnd();
-					oControl.getSegments().forEach((segment) => {
-						oRM.renderControl(segment);
-					})
+					if (oControl.getOrientation() === 'LI') {
+						oControl.getSegments().forEach((segment) => {
+							oRM.renderControl(segment);
+						})
+					} else {
+						oControl.getSegments().reverse().forEach((segment) => {
+							oRM.renderControl(segment);
+						})
+					}
 					oRM.close("div");
 					oRM.close("div");
 				},

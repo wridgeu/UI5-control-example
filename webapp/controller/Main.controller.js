@@ -141,11 +141,17 @@ sap.ui.define([
 
     _getDemoModel() {
       return {
+        huident: "1902076858547",
+        hutype: "BINU",
+        logpos: 1,
+        product: "8064967",
+        batch: "DENN000000",
+        orientation: "LI",
         items: [
           {
             huident: "1902076858547",
             hutype: "BINU",
-            logpos: "1",
+            logpos: 1,
             product: "8064967",
             batch: "DENN000000",
             state: "A",
@@ -153,7 +159,7 @@ sap.ui.define([
           {
             huident: "1902076858547",
             huType: "BINU",
-            logpos: "1",
+            logpos: 2,
             product: "8064967",
             batch: "DENN000000",
             state: "A",
@@ -161,7 +167,7 @@ sap.ui.define([
           {
             huident: "1902076858547",
             huType: "BINU",
-            logpos: "1",
+            logpos: 3,
             product: "8064967",
             batch: "DENN000000",
             state: "A",
@@ -169,7 +175,7 @@ sap.ui.define([
           {
             huident: "1902076858547",
             huType: "BINU",
-            logpos: "1",
+            logpos: 4,
             product: "8064967",
             batch: "DENN000000",
             state: "A",

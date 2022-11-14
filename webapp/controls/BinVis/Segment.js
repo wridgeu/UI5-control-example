@@ -157,7 +157,7 @@ sap.ui.define(
 							text: `${resourceBundle.getText("picking.txtSled")}: ${this.getSled()}`,
 						}).addStyleClass("smallText sapUiTinyMargin"),
 						new Text({
-							text: this.getHuident(),
+							text: `${this.getHuident()} && LogPos ${this.getLogpos()}`,
 						}).addStyleClass("smallText sapUiTinyMargin"),
 					],
 				});

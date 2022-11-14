@@ -60,6 +60,7 @@
                                         width="650px"
                                         height="250px"
                                         segments="{dmo>/items}"
+                                        orientation="{dmo>/orientation}"
                                     >
                                     <customControlsBinBis:segments>
                                     <customControlsBinBis:Segment
@@ -68,6 +69,7 @@
                                         hutype="{dmo>hutype}"
                                         product="{dmo>product}"
                                         batch="{dmo>batch}"
+                                        logpos="{dmo>logpos}"
                                         state="A"
                                     >
                                     </customControlsBinBis:Segment>
