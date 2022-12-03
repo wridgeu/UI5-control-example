@@ -1,0 +1,14 @@
+/* Box */
+.greenContainer {
+    background-color: #28a745;
+    border-style: groove;
+}
+
+.grayContainer {
+    background-color: #bbb9b9;
+    border-style: groove;
+}
+
+.boxLayout .sapMText {
+    color: white;
+}

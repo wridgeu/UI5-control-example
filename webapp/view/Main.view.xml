@@ -1,10 +1,10 @@
- 
 <mvc:View controllerName="com.mrb.customcontrol.controller.Main"
-	displayBlock="true"
+    displayBlock="true"
     xmlns="sap.m"
     xmlns:l="sap.ui.layout"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns:customControls="com.mrb.customcontrol.controls"
+    xmlns:cc="com.mrb.customcontrol.controls"
+    xmlns:ccBoxVis="com.mrb.customcontrol.controls.BoxVis"
     xmlns:xmlComposite="com.mrb.customcontrol.controls.compositeControl">
     <App id="idAppControl">
         <pages>
@@ -14,28 +14,28 @@
                         <l:BlockLayoutRow>
                             <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet5" backgroundColorShade="ShadeE">
                                 <FlexBox alignItems="Start" backgroundDesign="Transparent" direction="Column">
-                                     <Title class="title" titleStyle="H1" text="Extended Control"/>
+                                    <Title class="title" titleStyle="H1" text="Extended Control" />
                                 </FlexBox>
                                 <FlexBox alignItems="Center" alignContent="Center" justifyContent="Center" backgroundDesign="Transparent" direction="Column">
-                                    <customControls:ExtendedInput showValueHelp="true" value="test" onSelect="onSelectEventFired" press="onAggregationPressed"/>
+                                    <cc:ExtendedInput showValueHelp="true" value="test" onSelect="onSelectEventFired" press="onAggregationPressed" />
                                 </FlexBox>
                             </l:BlockLayoutCell>
                         </l:BlockLayoutRow>
                         <l:BlockLayoutRow>
                             <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet7" backgroundColorShade="ShadeF">
                                 <FlexBox alignItems="Start" backgroundDesign="Transparent" direction="Column">
-                                     <Title class="title" titleStyle="H1" text="Basic Custom Control"/>
+                                    <Title class="title" titleStyle="H1" text="Basic Custom Control" />
                                 </FlexBox>
                                 <FlexBox alignItems="Center" alignContent="Center" justifyContent="Center" backgroundDesign="Transparent" direction="Column">
-                                    <customControls:CustomControl value="This text is set in the currently rendered label aggregation of the custom control."/>
+                                    <cc:CustomControl value="This text is set in the currently rendered label aggregation of the custom control." />
                                 </FlexBox>
                             </l:BlockLayoutCell>
                         </l:BlockLayoutRow>
                         <l:BlockLayoutRow>
                             <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet5" backgroundColorShade="ShadeF">
                                 <FlexBox alignItems="Start" backgroundDesign="Transparent" direction="Column">
-                                     <Title class="title" titleStyle="H1" text="XMLComposite Control"/>
-                                     <Title class="title" titleStyle="H4" text="(deprecated → bad performance)"/>
+                                    <Title class="title" titleStyle="H1" text="XMLComposite Control" />
+                                    <Title class="title" titleStyle="H4" text="(deprecated → bad performance)" />
                                 </FlexBox>
                                 <FlexBox alignItems="Center" alignContent="Center" justifyContent="Center" backgroundDesign="Transparent" direction="Column">
                                     <xmlComposite:compositeControl label="LabelText" value="someValue" compositeControlEvent="onPress" />
@@ -45,9 +45,31 @@
                         <l:BlockLayoutRow>
                             <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet5" backgroundColorShade="ShadeF">
                                 <FlexBox alignItems="Start" backgroundDesign="Transparent" direction="Column">
-                                     <Title class="title" titleStyle="H1" text="Rerender CC on model changes (reactive)"/>
+                                    <Title class="title" titleStyle="H1" text="Rerender CC on model changes (reactive)" />
                                 </FlexBox>
-                                <FlexBox id="container" alignItems="Center" alignContent="Center" justifyContent="Center" backgroundDesign="Transparent" direction="Column">
+                                <FlexBox id="container" alignItems="Center" alignContent="Center" justifyContent="Center" backgroundDesign="Transparent" direction="Column"></FlexBox>
+                            </l:BlockLayoutCell>
+                        </l:BlockLayoutRow>
+                        <l:BlockLayoutRow>
+                            <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet5" backgroundColorShade="ShadeF">
+                                <FlexBox alignItems="Start" backgroundDesign="Transparent" direction="Column">
+                                    <Title class="title" titleStyle="H1" text="Custom Box Vis" />
+                                </FlexBox>
+                                <FlexBox id="container2" alignItems="Center" alignContent="Center" justifyContent="Center" backgroundDesign="Transparent" direction="Column">
+                                    <ccBoxVis:BoxVis
+                                        id="customBoxVis"
+                                        width="650px"
+                                        height="250px"
+                                        boxes="{dmo>/items}"
+                                        orientation="{dmo>/orientation}">
+                                        <ccBoxVis:Box
+                                            boxid="{dmo>boxid}"
+                                            boxtype="{dmo>boxtype}"
+                                            logpos="{dmo>logpos}"
+                                            state="{dmo>state}"
+                                            boxPressed=".onBoxPressed">
+                                        </ccBoxVis:Box>
+                                    </ccBoxVis:BoxVis>
                                 </FlexBox>
                             </l:BlockLayoutCell>
                         </l:BlockLayoutRow>

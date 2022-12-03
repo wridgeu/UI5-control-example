@@ -1,24 +1,30 @@
 sap.ui.define([
     "sap/ui/core/XMLComposite"
-], function(XMLComposite) {
-	"use strict";
+],
+    /**
+     * DEPRECATED → https://github.com/SAP/openui5/issues/3429#issuecomment-1314994428
+     * @param {sap.ui.core.XMLComposite} XMLComposite 
+     * @returns {com.mrb.customcontrol.controls.compositeControl.compositeControl}
+     */
+    (XMLComposite) => {
+        "use strict";
 
-	var compositeControl = XMLComposite.extend("com.mrb.customcontrol.controls.compositeControl.compositeControl", {
+        const compositeControl = XMLComposite.extend("com.mrb.customcontrol.controls.compositeControl.compositeControl", {
 
-		metadata: {
-			properties: {
-               label: "string",
-               value: "string"
+            metadata: {
+                properties: {
+                    label: "string",
+                    value: "string"
+                },
+                events: {
+                    compositeControlEvent: {}
+                }
             },
-            events: {
-                compositeControlEvent: {}
+            handlePress(oEvt) {
+                this.fireEvent("compositeControlEvent", oEvt);
+                // or this.fireCompositeControlEvent(oEvt)
             }
-        },
-        handlePress: function(oEvt){
-            this.fireEvent("compositeControlEvent", oEvt);
-        }
-    });
+        });
 
-    return compositeControl;
-    
-});
+        return compositeControl;
+    });
