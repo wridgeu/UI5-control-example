@@ -6,6 +6,7 @@ sap.ui.define(
 	 * @param {sap.m.VBox} VBox
 	 * @param {sap.m.HBox} HBox
 	 * @param {sap.m.Text} Text
+	 * @returns {com.mrb.customcontrol.controls.BoxVis.Box}
 	 */
 	(Control, BoxState, VBox, HBox, Text) => {
 		"use strict";

@@ -4,6 +4,7 @@ sap.ui.define(
 	 * @param {sap.ui.core.Control} Control
 	 * @param {sap.ui.dom.includeStylesheet} includeStylesheet
 	 * @param {com.mrb.customcontrol.controls.BoxVis.BoxOrientation} BoxOrientation
+	 * @returns {com.mrb.customcontrol.controls.BoxVis.Box}
 	 */
 	(Control, includeStylesheet, BoxOrientation) => {
 		"use strict";

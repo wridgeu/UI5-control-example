@@ -8,7 +8,6 @@ sap.ui.define([
   "com/mrb/customcontrol/controls/BoxVis/Box"
 ],
   /**
-   * 
    * @param {sap.ui.core.mvc.Controller} Controller 
    * @param {sap.m.MessageToast} MessageToast 
    * @param {com.mrb.customcontrol.controls.CCModelReactive} CCModelReactive 
@@ -16,31 +15,25 @@ sap.ui.define([
    * @param {sap.m.Button} Button 
    * @param {com.mrb.customcontrol.controls.BoxVis.BoxVis} BoxVis 
    * @param {com.mrb.customcontrol.controls.BoxVis.Box} Box 
-   * @returns 
+   * @returns {com.mrb.customcontrol.controller.Main}
    */
-  function (Controller,
-    MessageToast,
-    CCModelReactive,
-    JSONModel,
-    Button,
-    BoxVis,
-    Box) {
+  (Controller, MessageToast, CCModelReactive, JSONModel, Button, BoxVis, Box) => {
     "use strict";
 
     return Controller.extend("com.mrb.customcontrol.controller.Main", {
 
-      onInit: function () {
+      onInit() {
         this._setupCustomControlWithReactiveModelUsage()
         this._setupCustomControlBoxVis()
       },
 
-      onSelectEventFired: function (oEvt) {
+      onSelectEventFired(oEvt) {
         console.log(oEvt.getParameters());
       },
-      onAggregationPressed: function (oEvt) {
+      onAggregationPressed(oEvt) {
         console.log(oEvt);
       },
-      onPress: function (oEvt) {
+      onPress(oEvt) {
         MessageToast.show("Event from compositeControl got handled in Main.controller");
         console.log("Event from composite control got delegated.")
         console.log(oEvt)
