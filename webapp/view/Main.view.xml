@@ -3,8 +3,8 @@
     xmlns="sap.m"
     xmlns:l="sap.ui.layout"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns:customControls="com.mrb.customcontrol.controls"
-    xmlns:customControlsBinBis="com.mrb.customcontrol.controls.BinVis"
+    xmlns:cc="com.mrb.customcontrol.controls"
+    xmlns:ccBoxVis="com.mrb.customcontrol.controls.BoxVis"
     xmlns:xmlComposite="com.mrb.customcontrol.controls.compositeControl">
     <App id="idAppControl">
         <pages>
@@ -17,7 +17,7 @@
                                     <Title class="title" titleStyle="H1" text="Extended Control" />
                                 </FlexBox>
                                 <FlexBox alignItems="Center" alignContent="Center" justifyContent="Center" backgroundDesign="Transparent" direction="Column">
-                                    <customControls:ExtendedInput showValueHelp="true" value="test" onSelect="onSelectEventFired" press="onAggregationPressed" />
+                                    <cc:ExtendedInput showValueHelp="true" value="test" onSelect="onSelectEventFired" press="onAggregationPressed" />
                                 </FlexBox>
                             </l:BlockLayoutCell>
                         </l:BlockLayoutRow>
@@ -27,7 +27,7 @@
                                     <Title class="title" titleStyle="H1" text="Basic Custom Control" />
                                 </FlexBox>
                                 <FlexBox alignItems="Center" alignContent="Center" justifyContent="Center" backgroundDesign="Transparent" direction="Column">
-                                    <customControls:CustomControl value="This text is set in the currently rendered label aggregation of the custom control." />
+                                    <cc:CustomControl value="This text is set in the currently rendered label aggregation of the custom control." />
                                 </FlexBox>
                             </l:BlockLayoutCell>
                         </l:BlockLayoutRow>
@@ -56,25 +56,20 @@
                                     <Title class="title" titleStyle="H1" text="Custom Box Vis" />
                                 </FlexBox>
                                 <FlexBox id="container2" alignItems="Center" alignContent="Center" justifyContent="Center" backgroundDesign="Transparent" direction="Column">
-                                    <customControlsBinBis:BinVis id="customBinVis"
+                                    <ccBoxVis:BoxVis
+                                        id="customBoxVis"
                                         width="650px"
                                         height="250px"
-                                        segments="{dmo>/items}"
-                                        orientation="{dmo>/orientation}"
-                                    >
-                                    <customControlsBinBis:segments>
-                                    <customControlsBinBis:Segment
-                                        segmentId="{}"
-                                        huident="{dmo>huident}"
-                                        hutype="{dmo>hutype}"
-                                        product="{dmo>product}"
-                                        batch="{dmo>batch}"
-                                        logpos="{dmo>logpos}"
-                                        state="A"
-                                    >
-                                    </customControlsBinBis:Segment>
-                                    </customControlsBinBis:segments>
-                                </customControlsBinBis:BinVis>
+                                        boxes="{dmo>/items}"
+                                        orientation="{dmo>/orientation}">
+                                        <ccBoxVis:Box
+                                            boxid="{dmo>boxid}"
+                                            boxtype="{dmo>boxtype}"
+                                            logpos="{dmo>logpos}"
+                                            state="{dmo>state}"
+                                            boxPressed=".onBoxPressed">
+                                        </ccBoxVis:Box>
+                                    </ccBoxVis:BoxVis>
                                 </FlexBox>
                             </l:BlockLayoutCell>
                         </l:BlockLayoutRow>
