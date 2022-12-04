@@ -5,7 +5,6 @@ This is some playground repository for the corresponding [Wiki](https://github.c
 * Extending standard controls
 * Creating custom controls
 * Creating XMLComposite controls
-* Creating and Consuming UI5 libraries (ToDo)
 
 # Getting Started
 
