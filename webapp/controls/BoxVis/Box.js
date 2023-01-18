@@ -141,7 +141,9 @@ sap.ui.define(
 					// could be handled within the init, depending on the use-case however,
 					// we make use of our private aggregation to manage the layout.
 					// Always think about against which use-case you develop: 
-					// Binding? Internally Managed? Managed by user interaction with default state? Event handling? 
+					// Binding? Internally Managed? Managed by user interaction with default state? Event handling?
+					// Also check out: https://sdk.openui5.org/topic/c1512f6ce1454ff1913e3857bad56392 regarding different 
+					// property synchronization mechanisms.
 					RM.renderControl(Box._buildLayout());
 
 					RM.close("div");
