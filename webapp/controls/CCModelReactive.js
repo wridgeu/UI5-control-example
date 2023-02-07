@@ -19,26 +19,29 @@ sap.ui.define([
 				aggregations: {
 					text: {
 						type: "sap.m.Text",
-						multiple: false
+						multiple: false,
+						visibility: "hidden" // we make use of it internally only (no generation of getter/setter)
 					}
 				},
 			},
 
 			init() {
-				this._textControl = new Text()
+				// The aggregation could also be created within the XML, declaratively.
+				this.setAggregation('text', new Text())
 				// alternatively you can create & bind an internal default model here
 				// and manage it from the outside → `customControl.getModel().setData({<somedata>})`
 			},
 
 			onBeforeRendering() {
-				this.setAggregation("text", this._textControl.setText(JSON.stringify(this.getValue()) || 'nothing to display - initial'))
+				// If you can prevent setting the aggreagtion in a Render hook, you should. Otherwhise (in case it does not need to re-execute), make sure it runs only once.
+				// this.setAggregation("text", this._textControl.setText(JSON.stringify(this.getValue()) || 'nothing to display - initial'))
 			},
 
 			renderer: {
 				apiVersion: 2,
 				render(rm, control) {
 					rm.openStart("div", control).openEnd();
-					rm.renderControl(control.getAggregation("text", control));
+					rm.renderControl(control.getAggregation("text").setText(JSON.stringify(control.getValue()) || 'nothing to display - initial'));
 					rm.close("div")
 				}
 			}
