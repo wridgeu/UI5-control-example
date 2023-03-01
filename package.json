@@ -21,7 +21,7 @@
     "@openui5/ts-types": "^1.110.0",
     "@ui5/cli": "^2.14.17",
     "eslint": "^8.33.0",
-    "ui5-middleware-livereload": "^0.7.2"
+    "ui5-middleware-livereload": "^0.8.1"
   },
   "ui5": {
     "dependencies": [
