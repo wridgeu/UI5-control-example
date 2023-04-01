@@ -128,10 +128,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@openui5/ts-types@^1.110.0":
-  version "1.110.0"
-  resolved "https://registry.yarnpkg.com/@openui5/ts-types/-/ts-types-1.110.0.tgz#c3401210e42ebdfdb7b9d5207d06eb64d6efbb8e"
-  integrity sha512-Fcdff0gG44M8n6IVwx3qUUSNUQHNGCuigWYt5tXbNiqaCSm8Ops+3wir0Vw3KDke1YQ5xOcJEVx+U5lTr3uirA==
+"@openui5/ts-types@^1.112.0":
+  version "1.112.0"
+  resolved "https://registry.yarnpkg.com/@openui5/ts-types/-/ts-types-1.112.0.tgz#5982858618619d0b28e5d3b825fdb2fefed47dd8"
+  integrity sha512-KlT6OM8sE8U+3+3gfBwaqu2RrK91z4v1JzXsjV+e7vzRpOFIgBZrFE3BQdydFO3BebRr6uvrjikFzFSMZ+v4lg==
 
 "@pnpm/network.ca-file@^1.0.1":
   version "1.0.2"
