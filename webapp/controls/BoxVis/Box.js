@@ -59,7 +59,9 @@ sap.ui.define(
 			/**
 			 * Adds the i18n model of the surrounding application to the internals
 			 * of the Control. Depending on the scenario a direct property binding (`{18n>...}`) 
-			 * can also be used.
+			 * can also be used. Make sure that the custom control and all it's children know their parent (up the tree).
+			 * By doing this, you ensure that each control in the end resolves bindings against the i18n model of the 
+			 * applications itself during rendering.
 			 * Tech: resolves upwards i.e.: cc → .. → view → component
 			 */
 			onBeforeRendering() {
