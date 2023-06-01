@@ -20,7 +20,7 @@
   "devDependencies": {
     "@openui5/ts-types": "^1.113.0",
     "@ui5/cli": "^3.1.1",
-    "eslint": "^8.39.0",
+    "eslint": "^8.41.0",
     "ui5-middleware-livereload": "^0.8.2"
   }
 }
