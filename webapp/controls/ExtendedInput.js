@@ -51,6 +51,7 @@ sap.ui.define([
 					text: "This is an aggregation",
 					press: (evt) => {
 						this.firePress(evt)
+						MessageToast.show("fired Press event, check console");
 					}
 				}));
 			},
