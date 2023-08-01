@@ -62,7 +62,7 @@
 		"no-warning-comments": 1,
 		"strict": 1,
 		"valid-jsdoc": [
-			1,
+			0,
 			{
 				"requireReturn": false
 			}
