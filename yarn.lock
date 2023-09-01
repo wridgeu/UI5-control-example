@@ -323,29 +323,7 @@
   resolved "https://registry.npmjs.org/@types/normalize-package-data/-/normalize-package-data-2.4.1.tgz"
   integrity sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==
 
-"@ui5/builder@^3.0.5":
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/@ui5/builder/-/builder-3.0.6.tgz#aa12429fe6125a1a6e4d057bb5502c3ad527c455"
-  integrity sha512-OtR0BG2p3UfokHTXIWdp7GAQ37l1BTiSDJ8ZqlmLpipfcvQhWYdQi6R9MLCPSydw045KaViUXomp4OEVwqO9dA==
-  dependencies:
-    "@jridgewell/sourcemap-codec" "^1.4.15"
-    "@ui5/fs" "^3.0.4"
-    "@ui5/logger" "^3.0.0"
-    cheerio "1.0.0-rc.12"
-    escape-unicode "^0.2.0"
-    escope "^4.0.0"
-    espree "^9.5.2"
-    graceful-fs "^4.2.11"
-    jsdoc "^4.0.2"
-    less-openui5 "^0.11.6"
-    pretty-data "^0.40.0"
-    rimraf "^5.0.1"
-    semver "^7.5.2"
-    terser "^5.18.1"
-    workerpool "^6.4.0"
-    xml2js "^0.6.0"
-
-"@ui5/builder@^3.0.7", "@ui5/builder@^3.0.9":
+"@ui5/builder@^3.0.5", "@ui5/builder@^3.0.9":
   version "3.0.9"
   resolved "https://registry.yarnpkg.com/@ui5/builder/-/builder-3.0.9.tgz#7819fda6a0fc80cddb94c329574e1fc459805d11"
   integrity sha512-8ZGoTMXLQKDUSPdVhE9RHiboB1UP963JF5ORD4Eb+eIHK531EIFFDDTlq8W2QekWAABTYVzboYp35tz8BlS7CQ==
@@ -367,15 +345,15 @@
     workerpool "^6.4.0"
     xml2js "^0.6.0"
 
-"@ui5/cli@^3.3.4":
-  version "3.3.4"
-  resolved "https://registry.yarnpkg.com/@ui5/cli/-/cli-3.3.4.tgz#56c6ff51fbf81066ede85ddbff5d7ac7c014fa35"
-  integrity sha512-kev7P9dcMSh08KnRBHRlxzVDbquihRJnAQgl54nmD8jmWsZASn9IJESAD1VTLxY5M7r+g5kS1pnDYW9lUU83Sw==
+"@ui5/cli@^3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@ui5/cli/-/cli-3.5.0.tgz#e9024f4a5a8a3aafff476174bae8e49eaafe04ab"
+  integrity sha512-nAF1wzOS9ewvUrPLrt/I6uksdoR0mEg0xp7SM6R2ln7hUKBEhOKAgj3MtLNL81uO5ieQPs1PLyAAfdFdhs6VaQ==
   dependencies:
     "@ui5/builder" "^3.0.9"
     "@ui5/fs" "^3.0.4"
     "@ui5/logger" "^3.0.0"
-    "@ui5/project" "^3.4.2"
+    "@ui5/project" "^3.6.0"
     "@ui5/server" "^3.1.3"
     chalk "^5.3.0"
     data-with-position "^0.5.0"
@@ -411,13 +389,13 @@
     cli-progress "^3.11.2"
     figures "^5.0.0"
 
-"@ui5/project@^3.4.2":
-  version "3.4.2"
-  resolved "https://registry.yarnpkg.com/@ui5/project/-/project-3.4.2.tgz#f57f04ca326f0a5149d3efe0b2762dee0913acb6"
-  integrity sha512-v8cCl+rxrrJ7AhAMoLgHKBxcK7Lsg3LNocwEkQTMpmwoqYSq0J8Ufj5LN/rwxJAwAsNwRgpMuXbDknS3j374DQ==
+"@ui5/project@^3.6.0":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@ui5/project/-/project-3.6.0.tgz#234568c97efe734c24cd0aff08dd4835f3bae555"
+  integrity sha512-5A2nxPeRVYP5j1j9fVbGY5gkkdyf7xdDz3X4PRrl482MIZl5/X5YvnKhxYHRfzkmbzWVVxl7aitOQQrOymaoJw==
   dependencies:
     "@npmcli/config" "^6.2.1"
-    "@ui5/builder" "^3.0.7"
+    "@ui5/builder" "^3.0.9"
     "@ui5/fs" "^3.0.4"
     "@ui5/logger" "^3.0.0"
     ajv "^6.12.6"
@@ -434,10 +412,10 @@
     pretty-hrtime "^1.0.3"
     read-pkg "^8.0.0"
     read-pkg-up "^10.0.0"
-    resolve "^1.22.3"
+    resolve "^1.22.4"
     rimraf "^5.0.1"
     semver "^7.5.4"
-    xml2js "^0.6.0"
+    xml2js "^0.6.2"
     yesno "^0.4.0"
 
 "@ui5/server@^3.1.3":
@@ -852,12 +830,7 @@ chalk@^4.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chalk@^5.0.1, chalk@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.npmjs.org/chalk/-/chalk-5.2.0.tgz"
-  integrity sha512-ree3Gqw/nazQAPuJJEy+avdl7QfZMcUvmHIKgEZkGL+xOBzRvup5Hxo6LHuMceSxOabuJLJm5Yp/92R9eMmMvA==
-
-chalk@^5.3.0:
+chalk@^5.0.1, chalk@^5.2.0, chalk@^5.3.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-5.3.0.tgz#67c20a7ebef70e7f3970a01f90fa210cb6860385"
   integrity sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==
@@ -1445,7 +1418,7 @@ eslint@^8.46.0:
     strip-ansi "^6.0.1"
     text-table "^0.2.0"
 
-espree@^9.5.2, espree@^9.6.0:
+espree@^9.6.0:
   version "9.6.0"
   resolved "https://registry.yarnpkg.com/espree/-/espree-9.6.0.tgz#80869754b1c6560f32e3b6929194a3fe07c5b82f"
   integrity sha512-1FH/IiruXZ84tpUlm0aCUEwMl2Ho5ilqVh0VvQXw+byAz/4SAciyHLlfmL5WYqsvD38oymdUwBss0LtK8m4s/A==
@@ -2165,10 +2138,10 @@ is-ci@^3.0.1:
   dependencies:
     ci-info "^3.2.0"
 
-is-core-module@^2.12.0:
-  version "2.12.0"
-  resolved "https://registry.npmjs.org/is-core-module/-/is-core-module-2.12.0.tgz"
-  integrity sha512-RECHCBCd/viahWmwj6enj19sKbHfJrddi/6cBDsNTKbNq0f7VeaUkBo60BqzvPqo/W54ChS62Z5qyun7cfOMqQ==
+is-core-module@^2.13.0:
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.13.0.tgz#bb52aa6e2cbd49a30c2ba68c42bf3435ba6072db"
+  integrity sha512-Z7dk6Qo8pOCp3l4tsX2C5ZVas4V+UxwQodwZhLopL91TX8UyyHEXafPcyoeeWuLrwzHcr3igO78wNLwHJHsMCQ==
   dependencies:
     has "^1.0.3"
 
@@ -3550,12 +3523,12 @@ resolve-from@^5.0.0:
   resolved "https://registry.npmjs.org/resolve-from/-/resolve-from-5.0.0.tgz"
   integrity sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==
 
-resolve@^1.22.3:
-  version "1.22.3"
-  resolved "https://registry.npmjs.org/resolve/-/resolve-1.22.3.tgz"
-  integrity sha512-P8ur/gp/AmbEzjr729bZnLjXK5Z+4P0zhIJgBgzqRih7hL7BOukHGtSTA3ACMY467GRFz3duQsi0bDZdR7DKdw==
+resolve@^1.22.4:
+  version "1.22.4"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.22.4.tgz#1dc40df46554cdaf8948a486a10f6ba1e2026c34"
+  integrity sha512-PXNdCiPqDqeUou+w1C2eTQbNfxKSuMxqTCuvlmmMsk1NWHL5fRrhY6Pl0qEYYc6+QqGClco1Qj8XnjPego4wfg==
   dependencies:
-    is-core-module "^2.12.0"
+    is-core-module "^2.13.0"
     path-parse "^1.0.7"
     supports-preserve-symlinks-flag "^1.0.0"
 
@@ -3656,21 +3629,7 @@ semver-diff@^4.0.0:
   dependencies:
     semver "^7.3.5"
 
-semver@^7.0.0, semver@^7.1.1, semver@^7.3.5, semver@^7.3.7:
-  version "7.5.0"
-  resolved "https://registry.npmjs.org/semver/-/semver-7.5.0.tgz"
-  integrity sha512-+XC0AD/R7Q2mPSRuy2Id0+CGTZ98+8f+KvwirxOKIEyid+XSx6HbC63p+O4IndTHuX5Z+JxQ0TghCkO5Cg/2HA==
-  dependencies:
-    lru-cache "^6.0.0"
-
-semver@^7.5.2:
-  version "7.5.3"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.3.tgz#161ce8c2c6b4b3bdca6caadc9fa3317a4c4fe88e"
-  integrity sha512-QBlUtyVk/5EeHbi7X0fw6liDZc7BBmEaSYn01fMU1OUYbf6GPsbTtd8WmnqbI20SeycoHSeiybkE/q1Q+qlThQ==
-  dependencies:
-    lru-cache "^6.0.0"
-
-semver@^7.5.4:
+semver@^7.0.0, semver@^7.1.1, semver@^7.3.5, semver@^7.3.7, semver@^7.5.4:
   version "7.5.4"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.4.tgz#483986ec4ed38e1c6c48c34894a9182dbff68a6e"
   integrity sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==
@@ -3977,16 +3936,6 @@ tar@^6.1.11, tar@^6.1.2:
     mkdirp "^1.0.3"
     yallist "^4.0.0"
 
-terser@^5.18.1:
-  version "5.18.2"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-5.18.2.tgz#ff3072a0faf21ffd38f99acc9a0ddf7b5f07b948"
-  integrity sha512-Ah19JS86ypbJzTzvUCX7KOsEIhDaRONungA4aYBjEP3JZRf4ocuDzTg4QWZnPn9DEMiMYGJPiSOy7aykoCc70w==
-  dependencies:
-    "@jridgewell/source-map" "^0.3.3"
-    acorn "^8.8.2"
-    commander "^2.20.0"
-    source-map-support "~0.5.20"
-
 terser@^5.19.2:
   version "5.19.2"
   resolved "https://registry.yarnpkg.com/terser/-/terser-5.19.2.tgz#bdb8017a9a4a8de4663a7983f45c506534f9234e"
@@ -4288,6 +4237,14 @@ xml2js@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.6.0.tgz#07afc447a97d2bd6507a1f76eeadddb09f7a8282"
   integrity sha512-eLTh0kA8uHceqesPqSE+VvO1CDDJWMwlQfB6LuN6T8w6MaDJ8Txm8P7s5cHD0miF0V+GGTZrDQfxPZQVsur33w==
+  dependencies:
+    sax ">=0.6.0"
+    xmlbuilder "~11.0.0"
+
+xml2js@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.6.2.tgz#dd0b630083aa09c161e25a4d0901e2b2a929b499"
+  integrity sha512-T4rieHaC1EXcES0Kxxj4JWgaUQHDk+qwHcYOCFHfiwKz7tOVPLq7Hjq9dM1WCMhylqMEfP7hMcOIChvotiZegA==
   dependencies:
     sax ">=0.6.0"
     xmlbuilder "~11.0.0"
