@@ -50,10 +50,10 @@
   resolved "https://registry.yarnpkg.com/@eslint-community/regexpp/-/regexpp-4.6.2.tgz#1816b5f6948029c5eaacb0703b850ee0cb37d8f8"
   integrity sha512-pPTNuaAG3QMH+buKyBIGJs3g/S5y0caxw0ygM3YyE6yJFySwiGGSzA+mM3KJ8QQvzeLh3blwgSonkFjgQdxzMw==
 
-"@eslint/eslintrc@^2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-2.1.1.tgz#18d635e24ad35f7276e8a49d135c7d3ca6a46f93"
-  integrity sha512-9t7ZA7NGGK8ckelF0PQCfcxIUzs1Md5rrO6U/c+FIQNanea5UZC0wqKXH4vHBccmu4ZJgZ2idtPeW7+Q2npOEA==
+"@eslint/eslintrc@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-2.1.2.tgz#c6936b4b328c64496692f76944e755738be62396"
+  integrity sha512-+wvgpDsrB1YqAMdEUCcnTlpfVBH7Vqn6A/NT3D8WVXFIaKMlErPIZT3oCIAVCOtarRpMtelZLqJeU3t7WY6X6g==
   dependencies:
     ajv "^6.12.4"
     debug "^4.3.2"
@@ -65,10 +65,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@eslint/js@^8.46.0":
-  version "8.46.0"
-  resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.46.0.tgz#3f7802972e8b6fe3f88ed1aabc74ec596c456db6"
-  integrity sha512-a8TLtmPi8xzPkCbp/OGFUo5yhRkHM2Ko9kOWP4znJr0WAhWyThaw3PnwX4vOTWOAMsV2uRt32PPDcEz63esSaA==
+"@eslint/js@8.48.0":
+  version "8.48.0"
+  resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.48.0.tgz#642633964e217905436033a2bd08bf322849b7fb"
+  integrity sha512-ZSjtmelB7IJfWD2Fvb7+Z+ChTIKWq6kjda95fLcQKNS5aheVHn4IkfgRQE3sIIzTcSLwLcLZUD9UBt+V7+h+Pw==
 
 "@gar/promisify@^1.1.3":
   version "1.1.3"
@@ -229,10 +229,10 @@
     read-package-json-fast "^3.0.0"
     which "^3.0.0"
 
-"@openui5/ts-types@^1.116.0":
-  version "1.116.0"
-  resolved "https://registry.yarnpkg.com/@openui5/ts-types/-/ts-types-1.116.0.tgz#7fc507c8fff1f3feff26c114ff9f174500227ef6"
-  integrity sha512-i6kUxIXlU0TYEuvc+/jxm+dCOj0UtYc4rmDN5gaO+U6xjPI6RimyTeehqV10eVhqBVrdd1LIKeOVc80johBqsg==
+"@openui5/ts-types@^1.117.1":
+  version "1.117.1"
+  resolved "https://registry.yarnpkg.com/@openui5/ts-types/-/ts-types-1.117.1.tgz#a3a0b9431421e554b0f83540ba343938e43d4c20"
+  integrity sha512-mCg33vcyVQQqYHC89XvpZP1urp1rX0AaNIyIS3XhNO/oXnIyk4p1AhLWR34k1IwK2y82gBGqaTpYOAJbSalCFA==
 
 "@pkgjs/parseargs@^0.11.0":
   version "0.11.0"
@@ -345,7 +345,7 @@
     workerpool "^6.4.0"
     xml2js "^0.6.0"
 
-"@ui5/builder@^3.0.7", "@ui5/builder@^3.0.9":
+"@ui5/builder@^3.0.9":
   version "3.0.9"
   resolved "https://registry.yarnpkg.com/@ui5/builder/-/builder-3.0.9.tgz#7819fda6a0fc80cddb94c329574e1fc459805d11"
   integrity sha512-8ZGoTMXLQKDUSPdVhE9RHiboB1UP963JF5ORD4Eb+eIHK531EIFFDDTlq8W2QekWAABTYVzboYp35tz8BlS7CQ==
@@ -367,15 +367,15 @@
     workerpool "^6.4.0"
     xml2js "^0.6.0"
 
-"@ui5/cli@^3.3.4":
-  version "3.3.4"
-  resolved "https://registry.yarnpkg.com/@ui5/cli/-/cli-3.3.4.tgz#56c6ff51fbf81066ede85ddbff5d7ac7c014fa35"
-  integrity sha512-kev7P9dcMSh08KnRBHRlxzVDbquihRJnAQgl54nmD8jmWsZASn9IJESAD1VTLxY5M7r+g5kS1pnDYW9lUU83Sw==
+"@ui5/cli@^3.5.0":
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/@ui5/cli/-/cli-3.5.0.tgz#e9024f4a5a8a3aafff476174bae8e49eaafe04ab"
+  integrity sha512-nAF1wzOS9ewvUrPLrt/I6uksdoR0mEg0xp7SM6R2ln7hUKBEhOKAgj3MtLNL81uO5ieQPs1PLyAAfdFdhs6VaQ==
   dependencies:
     "@ui5/builder" "^3.0.9"
     "@ui5/fs" "^3.0.4"
     "@ui5/logger" "^3.0.0"
-    "@ui5/project" "^3.4.2"
+    "@ui5/project" "^3.6.0"
     "@ui5/server" "^3.1.3"
     chalk "^5.3.0"
     data-with-position "^0.5.0"
@@ -411,13 +411,13 @@
     cli-progress "^3.11.2"
     figures "^5.0.0"
 
-"@ui5/project@^3.4.2":
-  version "3.4.2"
-  resolved "https://registry.yarnpkg.com/@ui5/project/-/project-3.4.2.tgz#f57f04ca326f0a5149d3efe0b2762dee0913acb6"
-  integrity sha512-v8cCl+rxrrJ7AhAMoLgHKBxcK7Lsg3LNocwEkQTMpmwoqYSq0J8Ufj5LN/rwxJAwAsNwRgpMuXbDknS3j374DQ==
+"@ui5/project@^3.6.0":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@ui5/project/-/project-3.6.0.tgz#234568c97efe734c24cd0aff08dd4835f3bae555"
+  integrity sha512-5A2nxPeRVYP5j1j9fVbGY5gkkdyf7xdDz3X4PRrl482MIZl5/X5YvnKhxYHRfzkmbzWVVxl7aitOQQrOymaoJw==
   dependencies:
     "@npmcli/config" "^6.2.1"
-    "@ui5/builder" "^3.0.7"
+    "@ui5/builder" "^3.0.9"
     "@ui5/fs" "^3.0.4"
     "@ui5/logger" "^3.0.0"
     ajv "^6.12.6"
@@ -434,10 +434,10 @@
     pretty-hrtime "^1.0.3"
     read-pkg "^8.0.0"
     read-pkg-up "^10.0.0"
-    resolve "^1.22.3"
+    resolve "^1.22.4"
     rimraf "^5.0.1"
     semver "^7.5.4"
-    xml2js "^0.6.0"
+    xml2js "^0.6.2"
     yesno "^0.4.0"
 
 "@ui5/server@^3.1.3":
@@ -1397,20 +1397,20 @@ eslint-visitor-keys@^3.4.1:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-3.4.1.tgz#c22c48f48942d08ca824cc526211ae400478a994"
   integrity sha512-pZnmmLwYzf+kWaM/Qgrvpen51upAktaaiI01nsJD/Yr3lMOdNtq0cxkrrg16w64VtisN6okbs7Q8AfGqj4c9fA==
 
-eslint-visitor-keys@^3.4.2:
-  version "3.4.2"
-  resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-3.4.2.tgz#8c2095440eca8c933bedcadf16fefa44dbe9ba5f"
-  integrity sha512-8drBzUEyZ2llkpCA67iYrgEssKDUu68V8ChqqOfFupIaG/LCVPUT+CoGJpT77zJprs4T/W7p07LP7zAIMuweVw==
+eslint-visitor-keys@^3.4.3:
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-3.4.3.tgz#0cd72fe8550e3c2eae156a96a4dddcd1c8ac5800"
+  integrity sha512-wpc+LXeiyiisxPlEkUzU6svyS1frIO3Mgxj1fdy7Pm8Ygzguax2N3Fa/D/ag1WqbOprdI+uY6wMUl8/a2G+iag==
 
-eslint@^8.46.0:
-  version "8.46.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.46.0.tgz#a06a0ff6974e53e643acc42d1dcf2e7f797b3552"
-  integrity sha512-cIO74PvbW0qU8e0mIvk5IV3ToWdCq5FYG6gWPHHkx6gNdjlbAYvtfHmlCMXxjcoVaIdwy/IAt3+mDkZkfvb2Dg==
+eslint@^8.48.0:
+  version "8.48.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.48.0.tgz#bf9998ba520063907ba7bfe4c480dc8be03c2155"
+  integrity sha512-sb6DLeIuRXxeM1YljSe1KEx9/YYeZFQWcV8Rq9HfigmdDEugjLEVEa1ozDjL6YDjBpQHPJxJzze+alxi4T3OLg==
   dependencies:
     "@eslint-community/eslint-utils" "^4.2.0"
     "@eslint-community/regexpp" "^4.6.1"
-    "@eslint/eslintrc" "^2.1.1"
-    "@eslint/js" "^8.46.0"
+    "@eslint/eslintrc" "^2.1.2"
+    "@eslint/js" "8.48.0"
     "@humanwhocodes/config-array" "^0.11.10"
     "@humanwhocodes/module-importer" "^1.0.1"
     "@nodelib/fs.walk" "^1.2.8"
@@ -1421,7 +1421,7 @@ eslint@^8.46.0:
     doctrine "^3.0.0"
     escape-string-regexp "^4.0.0"
     eslint-scope "^7.2.2"
-    eslint-visitor-keys "^3.4.2"
+    eslint-visitor-keys "^3.4.3"
     espree "^9.6.1"
     esquery "^1.4.2"
     esutils "^2.0.2"
@@ -2165,10 +2165,10 @@ is-ci@^3.0.1:
   dependencies:
     ci-info "^3.2.0"
 
-is-core-module@^2.12.0:
-  version "2.12.0"
-  resolved "https://registry.npmjs.org/is-core-module/-/is-core-module-2.12.0.tgz"
-  integrity sha512-RECHCBCd/viahWmwj6enj19sKbHfJrddi/6cBDsNTKbNq0f7VeaUkBo60BqzvPqo/W54ChS62Z5qyun7cfOMqQ==
+is-core-module@^2.13.0:
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.13.0.tgz#bb52aa6e2cbd49a30c2ba68c42bf3435ba6072db"
+  integrity sha512-Z7dk6Qo8pOCp3l4tsX2C5ZVas4V+UxwQodwZhLopL91TX8UyyHEXafPcyoeeWuLrwzHcr3igO78wNLwHJHsMCQ==
   dependencies:
     has "^1.0.3"
 
@@ -3550,12 +3550,12 @@ resolve-from@^5.0.0:
   resolved "https://registry.npmjs.org/resolve-from/-/resolve-from-5.0.0.tgz"
   integrity sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==
 
-resolve@^1.22.3:
-  version "1.22.3"
-  resolved "https://registry.npmjs.org/resolve/-/resolve-1.22.3.tgz"
-  integrity sha512-P8ur/gp/AmbEzjr729bZnLjXK5Z+4P0zhIJgBgzqRih7hL7BOukHGtSTA3ACMY467GRFz3duQsi0bDZdR7DKdw==
+resolve@^1.22.4:
+  version "1.22.4"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.22.4.tgz#1dc40df46554cdaf8948a486a10f6ba1e2026c34"
+  integrity sha512-PXNdCiPqDqeUou+w1C2eTQbNfxKSuMxqTCuvlmmMsk1NWHL5fRrhY6Pl0qEYYc6+QqGClco1Qj8XnjPego4wfg==
   dependencies:
-    is-core-module "^2.12.0"
+    is-core-module "^2.13.0"
     path-parse "^1.0.7"
     supports-preserve-symlinks-flag "^1.0.0"
 
@@ -4288,6 +4288,14 @@ xml2js@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.6.0.tgz#07afc447a97d2bd6507a1f76eeadddb09f7a8282"
   integrity sha512-eLTh0kA8uHceqesPqSE+VvO1CDDJWMwlQfB6LuN6T8w6MaDJ8Txm8P7s5cHD0miF0V+GGTZrDQfxPZQVsur33w==
+  dependencies:
+    sax ">=0.6.0"
+    xmlbuilder "~11.0.0"
+
+xml2js@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.6.2.tgz#dd0b630083aa09c161e25a4d0901e2b2a929b499"
+  integrity sha512-T4rieHaC1EXcES0Kxxj4JWgaUQHDk+qwHcYOCFHfiwKz7tOVPLq7Hjq9dM1WCMhylqMEfP7hMcOIChvotiZegA==
   dependencies:
     sax ">=0.6.0"
     xmlbuilder "~11.0.0"
