@@ -229,10 +229,10 @@
     read-package-json-fast "^3.0.0"
     which "^3.0.0"
 
-"@openui5/ts-types@^1.117.1":
-  version "1.117.1"
-  resolved "https://registry.yarnpkg.com/@openui5/ts-types/-/ts-types-1.117.1.tgz#a3a0b9431421e554b0f83540ba343938e43d4c20"
-  integrity sha512-mCg33vcyVQQqYHC89XvpZP1urp1rX0AaNIyIS3XhNO/oXnIyk4p1AhLWR34k1IwK2y82gBGqaTpYOAJbSalCFA==
+"@openui5/ts-types@^1.118.0":
+  version "1.118.0"
+  resolved "https://registry.yarnpkg.com/@openui5/ts-types/-/ts-types-1.118.0.tgz#31b7ffeb8496c6772c34644c4010b76e38ec23e5"
+  integrity sha512-Gkf9z0V2wKDzB66zN7e9dpcF+kIVaerbYxALOYzjKYdHjlKnEumUfI7pGBx3poihZrNXrpcP+irdocFOpPFXqA==
 
 "@pkgjs/parseargs@^0.11.0":
   version "0.11.0"
