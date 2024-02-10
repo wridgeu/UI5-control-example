@@ -23,8 +23,8 @@ sap.ui.define([
     return Controller.extend("com.mrb.customcontrol.controller.Main", {
 
       onInit() {
-        this._setupCustomControlWithReactiveModelUsage()
-        this._setupCustomControlBoxVis()
+        this._setupCustomControlWithReactiveModelUsage();
+        this._setupCustomControlBoxVis();
       },
 
       onSelectEventFired(oEvt) {
@@ -35,8 +35,8 @@ sap.ui.define([
       },
       onPress(oEvt) {
         MessageToast.show("Event from compositeControl got handled in Main.controller");
-        console.log("Event from composite control got delegated.")
-        console.log(oEvt)
+        console.log("Event from composite control got delegated.");
+        console.log(oEvt);
       },
       _setupCustomControlWithReactiveModelUsage() {
         // create initial model
@@ -46,11 +46,11 @@ sap.ui.define([
             demoData2: "initialValue2",
             demoData3: "initialValue3",
           }
-        })
+        });
 
         // create custom control and bind against rootNode of model
         // https://jsbin.com/fosiya/edit?html,css,js,output → https://youtu.be/W3Qkev2yk9w
-        const customControlWithModel = new CCModelReactive({ value: "{/rootNode}" })
+        const customControlWithModel = new CCModelReactive({ value: "{/rootNode}" });
 
         // this would be the way in case the model has a name
         // const customControlWithModel = new CCModelReactive({ value: "{someName>/rootNode}" })
@@ -59,11 +59,11 @@ sap.ui.define([
         // here the model is put "inside" the custom control, alternatively
         // you can put it into the view or anywhere above within the tree 
         // the managedmodel will traverse and look for a match
-        customControlWithModel.setModel(this.customViewModel)
+        customControlWithModel.setModel(this.customViewModel);
         // this.getView().setModel(this.customViewModel)
 
         // insert the custom control into the flexbox (within the view)
-        this.byId("container").addItem(customControlWithModel)
+        this.byId("container").addItem(customControlWithModel);
 
         // dynamically create a custom button to alter the demo data at runtime
         this.byId("container").addItem(new Button("changeDataButton", {
@@ -80,9 +80,9 @@ sap.ui.define([
                 demoData3: Math.random(),
                 newlyAddedData: Math.random(),
               }
-            }, true)
+            }, true);
           }
-        }))
+        }));
       },
 
       /**
@@ -126,11 +126,11 @@ sap.ui.define([
 
         // ------------------------------------------------- // 
         // variant 4
-        this.byId("customBoxVis").setModel(new JSONModel(this._getDemoModel()), "dmo")
+        this.byId("customBoxVis").setModel(new JSONModel(this._getDemoModel()), "dmo");
       },
 
       onBoxPressed(event) {
-        MessageToast.show(`Pressed on: ${event.getParameter('id')}`)
+        MessageToast.show(`Pressed on: ${event.getParameter('id')}`);
       },
 
       /**
@@ -168,7 +168,7 @@ sap.ui.define([
               state: "I",
             }
           ]
-        }
+        };
       }
     });
   });

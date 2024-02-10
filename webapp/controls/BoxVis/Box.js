@@ -105,8 +105,8 @@ sap.ui.define(
 					renderType: "Bare",
 				}).addStyleClass("boxLayout");
 
-				this.setAggregation("_layout", layoutContainer)
-				return this.getAggregation("_layout")
+				this.setAggregation("_layout", layoutContainer);
+				return this.getAggregation("_layout");
 			},
 
 			/**

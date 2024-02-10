@@ -37,7 +37,7 @@ sap.ui.define(
 			},
 
 			init() {
-				includeStylesheet(sap.ui.require.toUrl("com/mrb/customcontrol/controls/BoxVis/style.css"))
+				includeStylesheet(sap.ui.require.toUrl("com/mrb/customcontrol/controls/BoxVis/style.css"));
 			},
 
 			/**
@@ -68,16 +68,16 @@ sap.ui.define(
 					if (BoxVis.getOrientation() === BoxOrientation.RIGHT) {
 						BoxVis.getBoxes().forEach((box) => {
 							RM.renderControl(box);
-						})
+						});
 					} else {
 						BoxVis.getBoxes().reverse().forEach((box) => {
 							RM.renderControl(box);
-						})
+						});
 					}
 					RM.close("div");
 					RM.close("div");
 				},
 			}
-		})
+		});
 	}
 );

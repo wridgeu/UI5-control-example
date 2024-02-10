@@ -9,7 +9,6 @@ sap.ui.define([
         "use strict";
 
         return Control.extend("com.mrb.customcontrol.controls.CustomControl", {
-
             metadata: {
                 properties: {
                     value: { type: "string", defaultValue: "Your text here ..." }
@@ -37,11 +36,11 @@ sap.ui.define([
             renderer: {
                 apiVersion: 2,
                 render(oRM, oCustomControl) {
-                    oRM.openStart("div", oCustomControl)
+                    oRM.openStart("div", oCustomControl);
                     oRM.class("someCSSClassHere");
                     oRM.openEnd();
                     oRM.renderControl(oCustomControl.getAggregation("_label", oCustomControl));
-                    oRM.close("div")
+                    oRM.close("div");
                 }
             }
 

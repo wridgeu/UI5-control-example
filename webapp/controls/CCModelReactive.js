@@ -11,7 +11,6 @@ sap.ui.define([
 		"use strict";
 
 		return Control.extend("com.mrb.customcontrol.controls.CCModelReactive", {
-
 			metadata: {
 				properties: {
 					value: { type: "object" }
@@ -27,7 +26,7 @@ sap.ui.define([
 
 			init() {
 				// The aggregation could also be created within the XML, declaratively.
-				this.setAggregation('text', new Text())
+				this.setAggregation('text', new Text());
 				// alternatively you can create & bind an internal default model here
 				// and manage it from the outside → `customControl.getModel().setData({<somedata>})`
 			},
@@ -42,7 +41,7 @@ sap.ui.define([
 				render(rm, control) {
 					rm.openStart("div", control).openEnd();
 					rm.renderControl(control.getAggregation("text").setText(JSON.stringify(control.getValue()) || 'nothing to display - initial'));
-					rm.close("div")
+					rm.close("div");
 				}
 			}
 		});

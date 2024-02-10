@@ -15,7 +15,6 @@ sap.ui.define([
 		"use strict";
 
 		return Input.extend("com.mrb.customcontrol.controls.ExtendedInput", {
-
 			metadata: {
 				properties: {
 					testProperty: {
@@ -50,7 +49,7 @@ sap.ui.define([
 				this.setButton(new Button({
 					text: "This is an aggregation",
 					press: (evt) => {
-						this.firePress(evt)
+						this.firePress(evt);
 						MessageToast.show("fired Press event, check console");
 					}
 				}));
@@ -60,7 +59,7 @@ sap.ui.define([
 				MessageToast.show("onValueHelpRequest has been fired");
 				this.fireEvent("onSelect", {
 					parameterOne: "someText"
-				})
+				});
 			},
 			//onChange is being inherited from sap.m.InputBase
 			onChange() {
@@ -74,7 +73,7 @@ sap.ui.define([
 			 */
 			renderer(RM, ExtendedInput) {
 				InputRenderer.render(RM, ExtendedInput); // use standard renderer
-				RM.renderControl(ExtendedInput.getButton()) // renderer custom button aggregation
+				RM.renderControl(ExtendedInput.getButton()); // renderer custom button aggregation
 			}
 		});
 	});
