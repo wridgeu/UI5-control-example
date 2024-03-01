@@ -394,10 +394,10 @@
     workerpool "^6.5.1"
     xml2js "^0.6.2"
 
-"@ui5/cli@^3.9.0":
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/@ui5/cli/-/cli-3.9.0.tgz#9c647313af7c20c77a46c97d0c8a5b8b6d7d4976"
-  integrity sha512-KnYRr+08Mz0OHLTkZ7Rpblqpby6flWVf2JWAdnwU0jLD1r/UoRlHRySmbd4HeVaRIV1eKRGpcyFLICQP2VxdrQ==
+"@ui5/cli@^3.9.1":
+  version "3.9.1"
+  resolved "https://registry.yarnpkg.com/@ui5/cli/-/cli-3.9.1.tgz#f797edcfdc88d7d2b1414e7bae7bbdd8feb00f21"
+  integrity sha512-Z+kyYjm9xOmUPAtBDkDUeV6Ys+uD56JvXgPo4TDE1n4yFrFomagXWmnlmSul8+fgNO9EQ6p6+aj9JjctIQx+VA==
   dependencies:
     "@ui5/builder" "^3.3.0"
     "@ui5/fs" "^3.0.5"
@@ -410,7 +410,7 @@
     js-yaml "^4.1.0"
     open "^9.1.0"
     pretty-hrtime "^1.0.3"
-    semver "^7.5.4"
+    semver "^7.6.0"
     update-notifier "^6.0.2"
     yargs "^17.7.2"
 
@@ -827,12 +827,7 @@ chalk@^4.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chalk@^5.0.1, chalk@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.npmjs.org/chalk/-/chalk-5.2.0.tgz"
-  integrity sha512-ree3Gqw/nazQAPuJJEy+avdl7QfZMcUvmHIKgEZkGL+xOBzRvup5Hxo6LHuMceSxOabuJLJm5Yp/92R9eMmMvA==
-
-chalk@^5.3.0:
+chalk@^5.0.1, chalk@^5.2.0, chalk@^5.3.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-5.3.0.tgz#67c20a7ebef70e7f3970a01f90fa210cb6860385"
   integrity sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==
@@ -3427,24 +3422,10 @@ semver-diff@^4.0.0:
   dependencies:
     semver "^7.3.5"
 
-semver@^7.0.0, semver@^7.1.1, semver@^7.3.5, semver@^7.3.7:
-  version "7.5.0"
-  resolved "https://registry.npmjs.org/semver/-/semver-7.5.0.tgz"
-  integrity sha512-+XC0AD/R7Q2mPSRuy2Id0+CGTZ98+8f+KvwirxOKIEyid+XSx6HbC63p+O4IndTHuX5Z+JxQ0TghCkO5Cg/2HA==
-  dependencies:
-    lru-cache "^6.0.0"
-
-semver@^7.5.3:
+semver@^7.0.0, semver@^7.1.1, semver@^7.3.5, semver@^7.3.7, semver@^7.5.3, semver@^7.5.4, semver@^7.6.0:
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.6.0.tgz#1a46a4db4bffcccd97b743b5005c8325f23d4e2d"
   integrity sha512-EnwXhrlwXMk9gKu5/flx5sv/an57AkRplG3hTK68W7FRDN+k+OWBj65M7719OkA82XLBxrcX0KSHj+X5COhOVg==
-  dependencies:
-    lru-cache "^6.0.0"
-
-semver@^7.5.4:
-  version "7.5.4"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.4.tgz#483986ec4ed38e1c6c48c34894a9182dbff68a6e"
-  integrity sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==
   dependencies:
     lru-cache "^6.0.0"
 
