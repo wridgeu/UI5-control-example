@@ -15,7 +15,7 @@
     "build": "ui5 build --clean-dest --dest ./dist"
   },
   "devDependencies": {
-    "@openui5/ts-types": "^1.120.6",
+    "@openui5/ts-types": "^1.121.0",
     "@ui5/cli": "^3.9.0",
     "eslint": "^8.56.0",
     "ui5-middleware-livereload": "^3.0.2"
