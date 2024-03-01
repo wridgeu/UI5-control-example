@@ -3832,10 +3832,10 @@ uc.micro@^1.0.1, uc.micro@^1.0.5:
   resolved "https://registry.npmjs.org/uc.micro/-/uc.micro-1.0.6.tgz"
   integrity sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==
 
-ui5-middleware-livereload@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/ui5-middleware-livereload/-/ui5-middleware-livereload-3.0.2.tgz#e0824a309f3f88af98f6f5a98b1110c5470972ea"
-  integrity sha512-abEZUodRS7bVmN4p2wJM/v36wbrHmw3Twkpwn2HmKBpCEc1yCeEnd6aikM6A/BW/2Mndng9hW8Cp3bzoWCWUTQ==
+ui5-middleware-livereload@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/ui5-middleware-livereload/-/ui5-middleware-livereload-3.0.3.tgz#d8cbf0bf740126574752b5d44d321552956b7375"
+  integrity sha512-A0p3n16EL/8u/oR2YY3hiGSxayArEYbn5zzo0/uGZ3RE+hYdlEPtRdN4UM5AG/P2FaLvku7flnf3FnDRM7YnfA==
   dependencies:
     connect-livereload "^0.6.1"
     livereload "^0.9.3"
