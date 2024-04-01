@@ -372,10 +372,10 @@
   resolved "https://registry.npmjs.org/@types/normalize-package-data/-/normalize-package-data-2.4.1.tgz"
   integrity sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==
 
-"@ui5/builder@^3.2.0", "@ui5/builder@^3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@ui5/builder/-/builder-3.3.0.tgz#570406b205c0e8c7293977006c50683a2b19120d"
-  integrity sha512-gQ28Bj4WqF3b+8Mp4luxe2pGb+Adq2qpy1H9JZ8DTpIGcCEcJgJVCTRv6KdWZja6y5ZD89NWQAv0k0N50MV6Sw==
+"@ui5/builder@^3.2.0", "@ui5/builder@^3.3.1":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@ui5/builder/-/builder-3.3.1.tgz#b8f494d51bdc8edbecb7a4abc33a92307b1f00b0"
+  integrity sha512-YHhCN8pF7eRHKWq4l8j3MYSabpGPe4ByoPLhW8NCz37HjlKPKa50ySUpTSHN9CGopMRzWxVMw6Zjul4SAwULWg==
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.4.15"
     "@ui5/fs" "^3.0.5"
@@ -389,17 +389,17 @@
     less-openui5 "^0.11.6"
     pretty-data "^0.40.0"
     rimraf "^5.0.5"
-    semver "^7.5.4"
-    terser "^5.27.0"
+    semver "^7.6.0"
+    terser "^5.29.2"
     workerpool "^6.5.1"
     xml2js "^0.6.2"
 
-"@ui5/cli@^3.9.1":
-  version "3.9.1"
-  resolved "https://registry.yarnpkg.com/@ui5/cli/-/cli-3.9.1.tgz#f797edcfdc88d7d2b1414e7bae7bbdd8feb00f21"
-  integrity sha512-Z+kyYjm9xOmUPAtBDkDUeV6Ys+uD56JvXgPo4TDE1n4yFrFomagXWmnlmSul8+fgNO9EQ6p6+aj9JjctIQx+VA==
+"@ui5/cli@^3.9.2":
+  version "3.9.2"
+  resolved "https://registry.yarnpkg.com/@ui5/cli/-/cli-3.9.2.tgz#7f091dbace6374e8297845f2acc5375fcd81e697"
+  integrity sha512-od2yjR3RPo9HAKnkNEH3uy5r7QFVLd6fOwlmSZIDA1UYAJxCs5ezgekiV4t3ufWOut2o13avpibzZlX2vqagSA==
   dependencies:
-    "@ui5/builder" "^3.3.0"
+    "@ui5/builder" "^3.3.1"
     "@ui5/fs" "^3.0.5"
     "@ui5/logger" "^3.0.0"
     "@ui5/project" "^3.9.0"
@@ -827,12 +827,7 @@ chalk@^4.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chalk@^5.0.1, chalk@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.npmjs.org/chalk/-/chalk-5.2.0.tgz"
-  integrity sha512-ree3Gqw/nazQAPuJJEy+avdl7QfZMcUvmHIKgEZkGL+xOBzRvup5Hxo6LHuMceSxOabuJLJm5Yp/92R9eMmMvA==
-
-chalk@^5.3.0:
+chalk@^5.0.1, chalk@^5.2.0, chalk@^5.3.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-5.3.0.tgz#67c20a7ebef70e7f3970a01f90fa210cb6860385"
   integrity sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==
@@ -3427,24 +3422,10 @@ semver-diff@^4.0.0:
   dependencies:
     semver "^7.3.5"
 
-semver@^7.0.0, semver@^7.1.1, semver@^7.3.5, semver@^7.3.7:
-  version "7.5.0"
-  resolved "https://registry.npmjs.org/semver/-/semver-7.5.0.tgz"
-  integrity sha512-+XC0AD/R7Q2mPSRuy2Id0+CGTZ98+8f+KvwirxOKIEyid+XSx6HbC63p+O4IndTHuX5Z+JxQ0TghCkO5Cg/2HA==
-  dependencies:
-    lru-cache "^6.0.0"
-
-semver@^7.5.3, semver@^7.6.0:
+semver@^7.0.0, semver@^7.1.1, semver@^7.3.5, semver@^7.3.7, semver@^7.5.3, semver@^7.5.4, semver@^7.6.0:
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.6.0.tgz#1a46a4db4bffcccd97b743b5005c8325f23d4e2d"
   integrity sha512-EnwXhrlwXMk9gKu5/flx5sv/an57AkRplG3hTK68W7FRDN+k+OWBj65M7719OkA82XLBxrcX0KSHj+X5COhOVg==
-  dependencies:
-    lru-cache "^6.0.0"
-
-semver@^7.5.4:
-  version "7.5.4"
-  resolved "https://registry.yarnpkg.com/semver/-/semver-7.5.4.tgz#483986ec4ed38e1c6c48c34894a9182dbff68a6e"
-  integrity sha512-1bCSESV6Pv+i21Hvpxp3Dx+pSD8lIPt8uVjRrxAUt/nbswYc+tK6Y2btiULjd4+fnq15PX+nqQDC7Oft7WkwcA==
   dependencies:
     lru-cache "^6.0.0"
 
@@ -3739,10 +3720,10 @@ tar@^6.1.11, tar@^6.1.2:
     mkdirp "^1.0.3"
     yallist "^4.0.0"
 
-terser@^5.27.0:
-  version "5.27.0"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-5.27.0.tgz#70108689d9ab25fef61c4e93e808e9fd092bf20c"
-  integrity sha512-bi1HRwVRskAjheeYl291n3JC4GgO/Ty4z1nVs5AAsmonJulGxpSektecnNedrwK9C7vpvVtcX3cw00VSLt7U2A==
+terser@^5.29.2:
+  version "5.30.0"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-5.30.0.tgz#64cb2af71e16ea3d32153f84d990f9be0cdc22bf"
+  integrity sha512-Y/SblUl5kEyEFzhMAQdsxVHh+utAxd4IuRNJzKywY/4uzSogh3G219jqbDDxYu4MXO9CzY3tSEqmZvW6AoEDJw==
   dependencies:
     "@jridgewell/source-map" "^0.3.3"
     acorn "^8.8.2"
