@@ -244,10 +244,10 @@
     node-gyp "^10.0.0"
     which "^4.0.0"
 
-"@openui5/ts-types@^1.121.0":
-  version "1.121.0"
-  resolved "https://registry.yarnpkg.com/@openui5/ts-types/-/ts-types-1.121.0.tgz#3fcdfdf398e6e00d78af7dddf5893c4f5c2c433b"
-  integrity sha512-fwqInVvMKDll+nCwaI2oCFOnNqLS93jrZB+rKMwxU/irBrPL69S4aqv2ed6pVX9juzb5qR8buNtySsZhhOkpXg==
+"@openui5/ts-types@^1.125.0":
+  version "1.125.0"
+  resolved "https://registry.yarnpkg.com/@openui5/ts-types/-/ts-types-1.125.0.tgz#a0231532eb94c78249d939bd9d75aa368f52daa9"
+  integrity sha512-BJV1/uqk4Zty6IixHqaDjviDCfWbJLlMG1oiIcBA6zchzgUVKKk10k20z/j7QIzyv60Dq8q1N92qZOA+p03mYw==
 
 "@pkgjs/parseargs@^0.11.0":
   version "0.11.0"
