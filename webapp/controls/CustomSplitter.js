@@ -13,7 +13,7 @@ sap.ui.define([
 
         renderer: {},
 
-        // not reuquired, create breakpoint in sap.ui.layout.Splitter.js and find out!
+        // seems not to be required, create breakpoint in sap.ui.layout.Splitter.js and find out!
         // onAfterRendering: function() {
         //     // if (sap.ui.layout.Splitter.prototype.onAfterRendering) {
         //     //     sap.ui.layout.Splitter.prototype.onAfterRendering.apply(this, arguments) //run the super class's method first
