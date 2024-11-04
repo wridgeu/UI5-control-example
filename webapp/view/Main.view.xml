@@ -73,6 +73,21 @@
                                 </FlexBox>
                             </l:BlockLayoutCell>
                         </l:BlockLayoutRow>
+                        <l:BlockLayoutRow>
+                            <l:BlockLayoutCell class="headerBar" width="100%" backgroundColorSet="ColorSet5" backgroundColorShade="ShadeE">
+                                <cc:CustomSplitter quickCollapseIndex="1">
+                                    <HBox>
+                                        <Title text="My first content area" />
+                                    </HBox>
+                                    <HBox>
+                                        <layoutData>
+                                            <l:SplitterLayoutData size="50%" />
+                                        </layoutData>
+                                        <Title text="My second content area" />
+                                    </HBox>
+                                </cc:CustomSplitter>
+                            </l:BlockLayoutCell>
+                        </l:BlockLayoutRow>
                     </l:BlockLayout>
                 </content>
             </Page>
