@@ -291,10 +291,10 @@
     proc-log "^4.0.0"
     which "^4.0.0"
 
-"@openui5/ts-types@^1.130.0":
-  version "1.130.0"
-  resolved "https://registry.yarnpkg.com/@openui5/ts-types/-/ts-types-1.130.0.tgz#aca2d2eafc070053ef62841270653686dee33b87"
-  integrity sha512-rol8QOWaNYSsSArGYjH43n5o2Ut99z2j17FROuvfgxsM3edaPkevSuUqQk/pgGeK4dXdqt0LMmNi9y82GBeI8g==
+"@openui5/ts-types@^1.130.1":
+  version "1.130.1"
+  resolved "https://registry.yarnpkg.com/@openui5/ts-types/-/ts-types-1.130.1.tgz#6e7a68972ddb71ab4cfaae439d3c5ade63828f9f"
+  integrity sha512-lrkPPc/fW58GXYSyKtkMorc7YnpkEp8guQb6zVU8b7IMalm9OrpATFFaOQcdK1tSAHshz1jz/0y14Qn40evmJA==
 
 "@pkgjs/parseargs@^0.11.0":
   version "0.11.0"
